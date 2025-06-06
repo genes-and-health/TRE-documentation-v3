@@ -2,7 +2,7 @@
 
 ## TRE Documentation
 
-1. [Getting started](getting-started-as-a-new-user)
+1. [Getting started](getting-started-as-a-new-user.md)
 2. How to guide
 3. Explainers
 4. Other documents
