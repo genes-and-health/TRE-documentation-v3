@@ -1,5 +1,7 @@
 site_name: Genes & Health TRE Documentation
-site_url: https://mydomain.org/mysite
+site_url: https://genes-and-health.github.io/test-docs
+repository_url: https://github.com/genes-and-health/test-docs
+edit_uri: edit/main/docs/
 theme:
   name: material
   logo: images/branding/genes-and-health-logo-green.svg
@@ -7,6 +9,7 @@ theme:
     - content.code.copy
     - content.code.select
     - content.code.annotate
+    - content.action.edit
 extra_css:
   - stylesheets/extra.css
 markdown_extensions:
