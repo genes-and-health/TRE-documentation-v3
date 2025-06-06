@@ -14,7 +14,7 @@ The documentation is built using [Material for MkDocs](https://squidfunk.github.
 
 Before you get started:
 
-- You must have **write permisssions** to the [test-docs](https://github.com/genes-and-health/test-docs) repository on GitHub.
+- You must have **write access** to the [test-docs](https://github.com/genes-and-health/test-docs) repository on GitHub.
 - You must be able to edit or add images under `docs/images/`.
 - **You do _not_ need to branch or fork**. This documentation encourages **low-friction updates** — just edit the files directly if you have access.
 - If multiple people are working on documentation simultaneously, consider coordinating to avoid merge conflicts.
