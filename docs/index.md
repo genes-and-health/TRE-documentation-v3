@@ -8,17 +8,19 @@
 4. Other documents
 
 <div class="grid cards" markdown>
-  <div class="card">
-    <a href="getting-started-as-a-new-user" class="md-button md-button--primary">Getting started</a>
-  </div>
-  <div class="card">
+  
+    <!--<a href="getting-started-as-a-new-user" class="md-button md-button--primary">Getting started</a>
+ 
     <a href="page2.md" class="md-button md-button--primary">How to guide</a>
-  </div>
-  <div class="card">
+  
     <a href="page3.md" class="md-button md-button--primary">Explainers</a>
-  </div>
-  <div class="card">
-    <a href="page4.md" class="md-button md-button--primary">Other documents</a>
-  </div>
+  
+    <a href="page4.md" class="md-button md-button--primary">Other documents</a>-->
+
+    [Getting started](getting-started-as-a-new-user)
+    [How to guide](page2)
+    [Explainers](explainers)
+    [Other documents](page4)
+  
 </div>
 
