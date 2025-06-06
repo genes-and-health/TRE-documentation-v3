@@ -1,0 +1,120 @@
+site_name: Genes & Health TRE Documentation
+site_url: https://mydomain.org/mysite
+theme:
+  name: material
+  logo: images/branding/genes-and-health-logo-green.svg
+  features:
+    - content.code.copy
+    - content.code.select
+    - content.code.annotate
+extra_css:
+  - stylesheets/extra.css
+markdown_extensions:
+  - admonition
+  - def_list
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+nav:
+  - How to update this documentation: how-to-update-this-documentation.md
+  - Latest TRE data updates and changes: latest-tre-data-updates-and-changes.md
+  - What is a TRE ?: what-is-a-tre-?.md
+#  - Trusted Research Environment (TRE): heading=h.vhgcd46bp2tb.md
+  - Sandboxes and what each sandbox can access: sandboxes-and-what-each-sandbox-can-access.md
+  - Getting started as a new user: getting-started-as-a-new-user.md
+#  - Pre-requisites: heading=h.ufs01g6l9ifw.md
+#  - Getting access steps: steps-to-get-access.md
+#  - Setting up a profile: setting-up-a-profile.md
+#  - Starting the TRE: starting-the-tre.md
+#  - Choosing your required machine configuration: choosing-your-required-machine-configuration.md
+#  - Choosing a custom machine configuration: choosing-a-custom-machine-configuration.md
+#  - Switching off the machine: switching-off-the-machine.md
+#  - GWAS Training Video: gwas-training-video.md
+#  - GWAS Example: gwas-example.md
+  - Folder and bucket structure: folder-and-bucket-structure.md
+#  - library-red: library-red.md
+#  - Red: red.md
+#  - Understanding G\&H Buckets: understanding-g&h-buckets.md
+#  - G\&H and Google Cloud Storage (GCS) Buckets: g&h-and-google-cloud-storage-\(gcs\.md-buckets)
+#  - GCS Buckets and Directories: gcs-buckets-and-directories.md
+#  - G\&H GCS Bucket URLs: g&h-gcs-bucket-urls.md
+#  - Copying data to red: copying-data-to-red.md
+#  - Folder structures: folder-structures.md
+#  - consortiumpriorityperiod-library-red: consortiumpriorityperiod-library-red.md
+#  - Green folders: green-folders.md
+#  - green: green.md
+#  - consortiumpriorityperiod-library-green: consortiumpriorityperiod-library-green.md
+#  - Other folders: other-folders.md
+#  - shared: shared.md
+#  - pipelines: pipelines.md
+#  - Public datasets bucket: public-datasets-bucket.md
+#  - Copying between Google Buckets within the TRE: copying-between-google-buckets-within-the-tre.md
+#  - Backups: backups.md
+#  - Shared folders: shared-folders.md
+#  - Sandbox-specific folders: sandbox-specific-folders.md
+  - What genetic and health data is where: what-genetic-and-health-data-is-where.md
+#  - TRE folders and what is in them: tre-folders-and-what-is-in-them.md
+  - Software, modules, requesting installs: software,-modules,-requesting-installs.md
+#  - Software Available: software-available.md
+#  - Linux command line software: linux-command-line-software.md
+#  - Programming languages: programming-languages.md
+#  - Python: python.md
+#  - R: r.md
+#  - Instructions for specific software: instructions-for-specific-software.md
+#  - Integrated Genome Viewer (IGV): integrated-genome-viewer-\(igv\.md)
+#  - LibreOffice: libreoffice.md
+#  - Git: git.md
+#  - File browser shortcuts: file-browser-shortcuts.md
+#  - How to get new software installed: how-to-get-new-software-installed.md
+#  - Software request: software-request.md
+#  - Developer requests: developer-requests.md
+  - How to use docker: how-to-use-docker.md
+  - How to write hash symbols: how-to-write-hash-symbols.md
+  - How to get your data in: how-to-get-your-data-in.md
+  - Copying text in: copying-text-in.md
+  - Getting user data into the TRE: getting-user-data-into-the-tre.md
+  - How to increase disk size​: how-to-increase-disk-size​.md
+  - Requesting data out of the TRE: requesting-data-out-of-the-tre.md
+  - Getting your results out: getting-your-results-out.md
+  - What is allowed out?: what-is-allowed-out?.md
+  - Existing data: existing-data.md
+  - Requesting data: requesting-data.md
+  - Accessing TRE data from external systems/internet: accessing-tre-data-from-external-systems/internet.md
+  - Explainers: explainers.md
+#  - How is data linked: how-is-data-linked.md
+#  - Where are the data from: where-are-the-data-from.md
+#  - Raw health data overview (UNDER CONSTRUCTION): raw-health-data-overview-\(under-construction\.md)
+#  - Summary: summary.md
+#  - Primary care data: primary-care-data.md
+#  - London: london.md
+#  - Bradford: bradford.md
+#  - Manchester: manchester.md
+#  - Secondary care data: secondary-care-data.md
+#  - London: london-1.md
+#  - Bradford: bradford-1.md
+#  - Manchester: manchester-1.md
+#  - What do the raw data look like: what-do-the-raw-data-look-like.md
+#  - Phenotype Curation (UNDER CONSTRUCTION): phenotype-curation-\(under-construction\.md)
+#  - Tools: tools.md
+#  - Codelists: codelists.md
+#  - Example code: example-code.md
+#  - Binary Traits: binary-traits.md
+#  - Example workflow: example-workflow.md
+#  - Example code: example-code-1.md
+#  - Quantitative traits: quantitative-traits.md
+#  - Codelists: codelists-1.md
+#  - Example workflow: example-workflow-1.md
+#  - Example code: example-code-2.md
+  - How to get Help: how-to-get-help.md
+  - MkDocs Hosting Options: mkdocs-hosting-options.md
