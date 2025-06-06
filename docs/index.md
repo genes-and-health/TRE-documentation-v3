@@ -9,18 +9,13 @@
 
 <div class="grid cards" markdown>
   
-    <!--<a href="getting-started-as-a-new-user" class="md-button md-button--primary">Getting started</a>
+    <a href="getting-started-as-a-new-user" class="md-button md-button--primary">Getting started</a>
  
     <a href="page2.md" class="md-button md-button--primary">How to guide</a>
   
     <a href="page3.md" class="md-button md-button--primary">Explainers</a>
   
-    <a href="page4.md" class="md-button md-button--primary">Other documents</a>-->
-
-    [Getting started](getting-started-as-a-new-user)
-    [How to guide](page2)
-    [Explainers](explainers)
-    [Other documents](page4)
-  
+    <a href="page4.md" class="md-button md-button--primary">Other documents</a>
+    
 </div>
 
