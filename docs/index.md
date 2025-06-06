@@ -2,4 +2,7 @@
 
 ## TRE Documentation
 
-Making using Genes and Health TRE easier
+1. Getting started
+2. How to guide
+3. Explainers
+4. Other documents
