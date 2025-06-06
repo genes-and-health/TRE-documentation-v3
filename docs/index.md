@@ -7,7 +7,7 @@
 3. Explainers
 4. Other documents
 
-<div class="grid cards" style="--mdc-shape-medium: 16px;">
+<div class="grid cards" markdown>
   <div class="card">
     <a href="getting-started-as-a-new-user" class="md-button md-button--primary">Getting started</a>
   </div>
