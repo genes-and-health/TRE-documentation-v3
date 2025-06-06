@@ -1,7 +1,8 @@
 site_name: test-docs
-site_description: Documentation for My Project
-site_author: Your Name
-# site_url: https://example.com
+site_url: https://gamma-two.github.io/test-docs/
+site_author: YOUR_NAME
+repo_name: gamma-two/mkdocs-demo
+repo_url: https://github.com/gamma-two/mkdocs-demo
 
 theme:
   name: material
