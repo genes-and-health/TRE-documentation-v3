@@ -29,6 +29,8 @@ markdown_extensions:
   - pymdownx.tabbed
   - pymdownx.highlight
   - pymdownx.inlinehilite
+  - attr_list
+  - md_in_html
 nav:
   - How to update this documentation: how-to-update-this-documentation.md
   - Latest TRE data updates and changes: latest-tre-data-updates-and-changes.md
