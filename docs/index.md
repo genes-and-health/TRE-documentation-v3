@@ -6,3 +6,19 @@
 2. How to guide
 3. Explainers
 4. Other documents
+
+<div class="grid cards" style="--mdc-shape-medium: 16px;">
+  <div class="card">
+    <a href="getting-started-as-a-new-user.md" class="md-button md-button--primary">Getting started</a>
+  </div>
+  <div class="card">
+    <a href="page2.md" class="md-button md-button--primary">How to guide</a>
+  </div>
+  <div class="card">
+    <a href="page3.md" class="md-button md-button--primary">Explainers</a>
+  </div>
+  <div class="card">
+    <a href="page4.md" class="md-button md-button--primary">Other documents</a>
+  </div>
+</div>
+
