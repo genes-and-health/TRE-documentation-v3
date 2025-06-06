@@ -37,3 +37,9 @@
   font-weight:700;
   color: var(--gh-cobalt-blue);
 }
+
+/* prevent GitHub stars etc. from showing in header */
+
+.md-header__source {
+  display:none;
+}
