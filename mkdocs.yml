@@ -1,6 +1,6 @@
 site_name: Genes & Health TRE Documentation
 site_url: https://genes-and-health.github.io/test-docs
-repository_url: https://github.com/genes-and-health/test-docs
+repo_url: https://github.com/genes-and-health/test-docs
 edit_uri: edit/main/docs/
 theme:
   name: material
