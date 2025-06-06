@@ -9,7 +9,7 @@
 
 <div class="grid cards" style="--mdc-shape-medium: 16px;">
   <div class="card">
-    <a href="getting-started-as-a-new-user.md" class="md-button md-button--primary">Getting started</a>
+    <a href="getting-started-as-a-new-user" class="md-button md-button--primary">Getting started</a>
   </div>
   <div class="card">
     <a href="page2.md" class="md-button md-button--primary">How to guide</a>
