@@ -48,7 +48,7 @@ If you want to go a specific sandbox, you can use the following URL table:
 ### Choosing your required machine configuration
 
 Once logged in, you will be taken to the **Virtual Machines** page where you can start a new machine or connect to an existing one.  
-![Virtual Machine options][images/sandboxes-and-folder-structures/virtual-machine-options.png]  
+![Virtual Machine options](images/sandboxes-and-folder-structures/virtual-machine-options.png)
 You will be offered a variety of virtual machine types.  
 **Warning:** Choose the Basic machine unless a script requires high memory or increased CPU capacity, and is ready to go. Test your script on the Basic machine first, as other options are more expensive.  
 **Note:** Some machine types have many CPUs, which are suitable for multithreaded applications like plink or regenie that can fully utilise them. These applications may sometimes run input/output operations too quickly for standard Google bucket storage, requiring you to copy key files to faster local storage (see below).
@@ -56,7 +56,7 @@ You will be offered a variety of virtual machine types.
 ### Choosing a custom machine configuration
 
 It is possible that sometimes you may require a Virtual Machine that offers resources different to the standard flavors i.e. higher-memory, higher-cpu or memory-optimised instances. You can choose a custom VM configuration from the **Virtual Machines** page by expanding the **Use custom Virtual Machine profile** section at the bottom.  
-![Custom Virtual Machine profile][images/sandboxes-and-folder-structures/custom-virtual-machine-profile.png]  
+![Custom Virtual Machine profile](images/sandboxes-and-folder-structures/custom-virtual-machine-profile.png)
 **Warning:** Choose the Use custom Virtual Machine profile only when absolutely necessary, use Basic machine unless a script requires high memory or increased CPU capacity. Excess use of higher-spec machines can significantly impact running costs. Test your script on the Basic machine first, as other options are more expensive.
 
 ### Switching off the machine
