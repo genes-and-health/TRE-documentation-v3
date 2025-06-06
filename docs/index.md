@@ -2,11 +2,6 @@
 
 ## TRE Documentation
 
-1. [Getting started](getting-started-as-a-new-user.md)
-2. How to guide
-3. Explainers
-4. Other documents
-
 <div class="grid cards">
   
     <a href="getting-started-as-a-new-user" class="md-button md-button--primary">Getting started</a>
