@@ -116,12 +116,12 @@ Which renders as:
 
 Here’s how to display some python with syntax highlighting:
 
-```
-\`\`\`python
+````markdown
+```python
 def greet(name: pl.Utf8) -> None:
   print(f"Hello, {name}")
-\`\`\`
 ```
+````
 
 Which appears in the documentation as:
 
