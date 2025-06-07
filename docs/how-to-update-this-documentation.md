@@ -26,11 +26,19 @@ All content lives in Markdown (`.md`) files within the `docs/` directory.
 
 ### Steps:
 
+1. In [test-docs](https://genes-and-health.github.io/test-docs) to the page you want to update
+2. Click :material-file-edit:
+3. If prompted, sign in with as a user with write access to the docs GitHub repo.
+4. You are now in edit mode (editing the .md file for that documentation page).
+5. Commit changes… when you are happy with the edits you have made.
+
+<!--
 1. Open the relevant Markdown file inside `docs/` (or a subdirectory).
 2. Edit the content using any text editor (e.g., VS Code).
 3. Save your changes — the MkDocs live server will reload automatically.
 4. Check formatting and visual layout locally.
 5. Commit when you're happy with the result.
+-->
 
 #### Example: Adding an info box
 
