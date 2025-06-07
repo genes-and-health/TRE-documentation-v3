@@ -32,6 +32,8 @@ All content lives in Markdown (`.md`) files within the `docs/` directory.
 4. You are now in edit mode (editing the .md file for that documentation page).
 5. Commit changes… when you are happy with the edits you have made.
 
+!!! tip
+    return to the page inntye documentation where the changes were made. If after a few seconds you refresh the page in the browser the changes should appear in place. 
 <!--
 1. Open the relevant Markdown file inside `docs/` (or a subdirectory).
 2. Edit the content using any text editor (e.g., VS Code).
@@ -46,7 +48,7 @@ All content lives in Markdown (`.md`) files within the `docs/` directory.
 
 ## 🖼️ Adding Images
 
-All image assets should live under the `docs/images/` folder of the `test-docs` repo. If an image for use exists elsewhere on the internet then (provided you have permission) make a copy and place it in `docs/images/`. this protects against referring in thr docs to an image which has subsequently been moved or deleted externally. 
+All image assets should live under the `docs/images/` folder of the `test-docs` repo. If an image for use exists elsewhere on the internet then (provided you have permission) make a copy and place it in `docs/images/`. This protects against referring in the docs to an image which has subsequently been moved or deleted externally. 
 
 ### How to include images:
 
