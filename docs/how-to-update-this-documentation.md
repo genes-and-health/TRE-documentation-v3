@@ -26,8 +26,8 @@ All content lives in Markdown (`.md`) files within the `docs/` directory.
 
 ### Steps:
 
-1. In [test-docs](https://genes-and-health.github.io/test-docs), navigate to the page you want to update.
-2. Click :material-file-edit-outline:{.md-typeset}.
+1. In [test-docs](https://genes-and-health.github.io/test-docs), navigate to the documentation page you want to update.
+2. Click :material-file-edit-outline:{.md-typeset} in the top right of the page.
 3. If prompted, sign in as a user with write access to the `test-docs` GitHub repo.
 4. You are now in edit mode (editing the .md file for that documentation page).
 5. Commit changes… when you are happy with the edits you have made.
