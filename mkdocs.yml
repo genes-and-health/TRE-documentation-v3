@@ -39,6 +39,8 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
   - pymdownx.tabbed
   - pymdownx.highlight
   - pymdownx.inlinehilite
