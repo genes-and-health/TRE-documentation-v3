@@ -114,9 +114,19 @@ Which renders as:
     You can add callouts like this to draw attention.
 - **Code syntax highlighting**:
 
-Here’s some syntax highlighting to display python:
+Here’s how to display some python with syntax highlighting:
+
+```
+\`\`\`python
+def greet(name: pl.Utf8) -> None:
+  print(f"Hello, {name}")
+\`\`\`
+```
+
+Which appears in the documentation as:
+
   ```python
-  def greet(name):
+  def greet(name: pl.Utf8) -> None:
       print(f"Hello, {name}")
   ```
 - **Internal linking**:
