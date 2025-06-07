@@ -40,19 +40,7 @@ All content lives in Markdown (`.md`) files within the `docs/` directory.
 5. Commit when you're happy with the result.
 -->
 
-#### Example: Adding an info box
 
-Material for MkDocs supports [admonitions](https://squidfunk.github.io/mkdocs-material/reference/admonitions/):
-
-```markdown
-!!! note
-    You can add callouts like this to draw attention.
-```
-
-Which renders as:
-
-!!! note
-    You can add callouts like this to draw attention.
 
 ---
 
@@ -109,7 +97,21 @@ YAML is whitespace-sensitive — use 2 spaces per indentation, not tabs!
 
 Material for MkDocs includes several powerful extensions:
 
-- **Admonitions**: `!!! note`, `!!! warning`, `!!! example`, etc.
+- **Callout boxess**: `!!! note`, `!!! warning`, `!!! example`, etc.
+
+### Example: Adding a `note` box
+
+Material for MkDocs calls these [admonitions](https://squidfunk.github.io/mkdocs-material/reference/admonitions/):
+
+```markdown
+!!! note
+    You can add callouts like this to draw attention.
+```
+
+Which renders as:
+
+!!! note
+    You can add callouts like this to draw attention.
 - **Code syntax highlighting**:
 
 Here’s some syntax highlighting to display python:
