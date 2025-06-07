@@ -125,31 +125,30 @@ def greet(name: pl.Utf8) -> None:
 
 Which appears in the documentation as:
 
-  ```python
-  def greet(name: pl.Utf8) -> None:
-      print(f"Hello, {name}")
-  ```
+```python
+def greet(name: pl.Utf8) -> None:
+    print(f"Hello, {name}")
+```
 Another example:
-  ```cobol
-  IDENTIFICATION DIVISION.
-  PROGRAM-ID. GREET.
+```cobol
+IDENTIFICATION DIVISION.
+PROGRAM-ID. GREET.
 
-  DATA DIVISION.
-  WORKING-STORAGE SECTION.
-  01 USER-NAME        PIC X(100).
-  01 GREETING-MSG     PIC X(120).
+DATA DIVISION.
+WORKING-STORAGE SECTION.
+01 USER-NAME        PIC X(100).
+01 GREETING-MSG     PIC X(120).
 
-  PROCEDURE DIVISION.
-  MAIN-LOGIC.
-  DISPLAY "Enter your name: ".
-          ACCEPT USER-NAME
-          STRING "Hello, " DELIMITED BY SIZE
-                  USER-NAME DELIMITED BY SPACE
-                  INTO GREETING-MSG
-           DISPLAY GREETING-MSG
-           STOP RUN.
-
-  ```
+PROCEDURE DIVISION.
+MAIN-LOGIC.
+DISPLAY "Enter your name: ".
+  ACCEPT USER-NAME
+  STRING "Hello, " DELIMITED BY SIZE
+      USER-NAME DELIMITED BY SPACE
+      INTO GREETING-MSG
+  DISPLAY GREETING-MSG
+  STOP RUN.
+```
 
 - **Internal linking**:
   ```markdown
