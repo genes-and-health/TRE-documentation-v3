@@ -97,7 +97,7 @@ YAML is whitespace-sensitive — use 2 spaces per indentation, not tabs!
 
 Material for MkDocs includes several powerful extensions:
 
-- **Callout boxess**: `!!! note`, `!!! warning`, `!!! example`, etc.
+- **Callout boxes**: `!!! note`, `!!! warning`, `!!! example`, etc.
 
 ### Example: Adding a `note` box
 
