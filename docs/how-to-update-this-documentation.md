@@ -26,9 +26,9 @@ All content lives in Markdown (`.md`) files within the `docs/` directory.
 
 ### Steps:
 
-1. In [test-docs](https://genes-and-health.github.io/test-docs) to the page you want to update
-2. Click :material-file-edit-outline:{.md-typeset}
-3. If prompted, sign in with as a user with write access to the docs GitHub repo.
+1. In [test-docs](https://genes-and-health.github.io/test-docs), navigate to the page you want to update.
+2. Click :material-file-edit-outline:{.md-typeset}.
+3. If prompted, sign in as a user with write access to the `test-docs` GitHub repo.
 4. You are now in edit mode (editing the .md file for that documentation page).
 5. Commit changes… when you are happy with the edits you have made.
 
@@ -58,12 +58,12 @@ Which renders as:
 
 ## 🖼️ Adding Images
 
-All image assets should live under the `docs/images/` folder.
+All image assets should live under the `docs/images/` folder of the `test-docs` repo. If an image for use exists elsewhere on the internet then (provided you have permission) make a copy and place it in `docs/images/`. this protects against referring in thr docs to an image which has subsequently been moved or deleted externally. 
 
 ### How to include images:
 
-1. Copy your image file (e.g., `cool-manhattan-plot.png`) to `docs/images/`. Or a subfolder therein (e.g. `docs/images/regenie/`)
-2. Embed it in your `.md` file like so:
+1. Upload your image file (e.g., `cool-manhattan-plot.png`) to `docs/images/` in the `test-docs` repo. Or a subfolder therein (e.g. `docs/images/regenie/`)
+2. refer to the image in your `.md` file like so:
 
    ```markdown
    ![Cool Manhattan Plot](images/cool-manhattan-plot.png)
