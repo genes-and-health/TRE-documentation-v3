@@ -33,7 +33,7 @@ All content lives in Markdown (`.md`) files within the `docs/` directory.
 5. Commit changes… when you are happy with the edits you have made.
 
 !!! tip
-    return to the page inntye documentation where the changes were made. If after a few seconds you refresh the page in the browser the changes should appear in place. 
+    Return to the page in the documentation where the changes were made. wait a few seconds and refresh the page in the browser; the changes should appear in place. 
 <!--
 1. Open the relevant Markdown file inside `docs/` (or a subdirectory).
 2. Edit the content using any text editor (e.g., VS Code).
