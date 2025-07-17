@@ -3,8 +3,6 @@
 
 Welcome! This page is part of the documentation itself — and serves as your guide for contributing updates to it.
 
-STU WOZ HERE 17.07.2025
-
 The documentation is built using [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/), a powerful and customisable static site generator for project documentation. Whether you’re fixing typos, updating content, or adding entirely new sections, this guide will walk you through how to do it cleanly and effectively.
 
 !!! tip
