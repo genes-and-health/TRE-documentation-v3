@@ -1,5 +1,7 @@
 # **Getting started as a new user**
 
+STU WOZ HERE 2025-07-24
+
 ### Steps to get access 
 
 * All users must read and accept the [Genes & Health Code of Conduct](https://e4c14f23.tre-documentation.pages.dev/assets/files/TRE_User_Code_of_Conduct_5.0-4fb0174879dd67ccf5dc610fd014d9c2.pdf).  
