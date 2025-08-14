@@ -54,7 +54,7 @@ Once you have launched the application, the interface will look like this:
 
 **Unload All:** Remove all active modules in one click.
 
-!!! Note:
+!!! Note
     The modules in the ‘Loaded Modules’ panel appear in the LIFO order. If two loaded modules expose the same command (e.g. R), only the top-most (latest loaded) module is active and is available in the user terminal.
 
 In the following example, both R-SAIGE and R-aio expose the R command to the user terminal. However, as the R-SAIGE is the latest one (at top of the list), this is the effective module and typing the R command will load this module’s R environment.
