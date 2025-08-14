@@ -69,7 +69,7 @@ Once you have unloaded the last loaded module that exposes R (R-SAIGE), the prev
 If you're comfortable in the terminal, the module-manager CLI tool gives you precise control.
 ### 1. Load a Module
 ```
-$ module-manager load [module-name]
+$ module-manager load <module-name>
 ```
 
 - Checks if the module is already loaded.
@@ -141,7 +141,7 @@ Removes all active modules and their command wrappers.
 
 # Frequently Asked Questions
 ### Where do my modules come from?
-They live in /genesandhealth/library-red/modules. Your admin or team lead might maintain these.
+They live in /genesandhealth/library-red/modules. Your TRE admins maintain these.
 
 !!! Tips
     You can load multiple modules at once. They won't interfere with each other unless they export the same command names. 
