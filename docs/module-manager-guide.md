@@ -28,6 +28,7 @@ You can find the ‘Module Manager’ application icon on your desktop. You can 
 
 Once you have launched the application, the interface will look like this:
 
+![Module Manager GUI](images/module-manager/module-manager-gui.png)
 
 **Search Modules (Top):** Use the search bar to filter modules by name. You can start typing keywords in the search bar to find available packages.
 
