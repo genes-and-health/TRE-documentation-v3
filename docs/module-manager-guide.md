@@ -44,6 +44,8 @@ Once you have launched the application, the interface will look like this:
 ### Actions:
 **Load:** Once you have selected a module from the ‘Available Modules’ panel, you can click the Load button to make the module's commands available in your shell. The loaded modules will now be shown in the ‘Loaded Modules’ panel at the bottom right along with the list of commands they expose.
 
+![Loaded Modules](images/module-manager/loaded-modules.png)
+
 **Unload:** After selecting a module from the ‘Available Modules’ panel, you can click on the Unload button to remove a module and its commands from your shell.
 
 **Status:** Check if a module is loaded, and view its details.
@@ -57,7 +59,11 @@ Once you have launched the application, the interface will look like this:
 
 In the following example, both R-SAIGE and R-aio expose the R command to the user terminal. However, as the R-SAIGE is the latest one (at top of the list), this is the effective module and typing the R command will load this module’s R environment.
 
+![Loaded Modules](images/module-manager/loaded-modules-2.png)
+
 Once you have unloaded the last loaded module that exposes R (R-SAIGE), the previously loaded module (R-aio) will become active and now the R command from the terminal will point to the R-aio:
+
+![Loaded Modules](images/module-manager/loaded-modules-3.png)
 
 ## CLI Usage
 If you're comfortable in the terminal, the module-manager CLI tool gives you precise control.
