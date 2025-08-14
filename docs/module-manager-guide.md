@@ -29,19 +29,25 @@ Once you have launched the application, the interface will look like this:
 
 
 **Search Modules (Top):** Use the search bar to filter modules by name. You can start typing keywords in the search bar to find available packages.
+
 **Available Modules (Left Panel):** Displays a list of all the available modules.
+
 **Module Description (Bottom Left Panel):** When you click on a module from the ‘Available Modules’ panel, a module description will appear in this panel. The description will usually include following information:
     - A general description of the module and its intent.
     - Packages Included: A list of packages installed and available in the module.
     - Commands Exported: A list of commands that the module will expose to the user terminal.
+
 **Loaded Modules (Bottom Right Panel):** Shows a list of the loaded modules along with the commands they expose.
 
 ### Actions:
 **Load:** Once you have selected a module from the ‘Available Modules’ panel, you can click the Load button to make the module's commands available in your shell. The loaded modules will now be shown in the ‘Loaded Modules’ panel at the bottom right along with the list of commands they expose.
 
 **Unload:** After selecting a module from the ‘Available Modules’ panel, you can click on the Unload button to remove a module and its commands from your shell.
+
 **Status:** Check if a module is loaded, and view its details.
+
 **Restore:** Re-load all previously active modules (e.g., after a reboot).
+
 **Unload All:** Remove all active modules in one click.
 
 !!! Note:
