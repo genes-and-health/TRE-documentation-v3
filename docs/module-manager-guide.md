@@ -60,7 +60,7 @@ Once you have unloaded the last loaded module that exposes R (R-SAIGE), the prev
 ## CLI Usage
 If you're comfortable in the terminal, the module-manager CLI tool gives you precise control.
 ### 1. Load a Module
-module-manager load <module-name>
+'module-manager load <module-name>'
 
 - Checks if the module is already loaded.
 - Creates lightweight command wrappers in ~/.local/share/modules/bin/
