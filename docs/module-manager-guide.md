@@ -24,6 +24,7 @@ You can interact with the Module Manager in two ways:
 ## GUI Usage
 You can find the ‘Module Manager’ application icon on your desktop. You can also find it from the top-left drop-down menu (Applications >> Genes & Health):
 
+![Module Manager App](images/module-manager-app.png)
 
 Once you have launched the application, the interface will look like this:
 
