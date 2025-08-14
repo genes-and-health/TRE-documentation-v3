@@ -138,5 +138,6 @@ nav:
 #  - Codelists: codelists-1.md
 #  - Example workflow: example-workflow-1.md
 #  - Example code: example-code-2.md
+  - Module Manager User Guide: module-manager-guide.md
   - How to get Help: how-to-get-help.md
   - MkDocs Hosting Options: mkdocs-hosting-options.md
