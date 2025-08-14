@@ -68,51 +68,64 @@ Once you have unloaded the last loaded module that exposes R (R-SAIGE), the prev
 ## CLI Usage
 If you're comfortable in the terminal, the module-manager CLI tool gives you precise control.
 ### 1. Load a Module
-'''module-manager load [module-name]'''
+```
+$ module-manager load [module-name]
+```
 
 - Checks if the module is already loaded.
 - Creates lightweight command wrappers in ~/.local/share/modules/bin/
 - Lets you run module commands directly in your terminal.
 
 **Example:**
-module-manager load bcftools
+```
+$ module-manager load bcftools
+```
 
 Now you can simply run:
-bcftools view file.vcf
-
+```
+$ bcftools view file.vcf
+```
 
 Under the hood, this command is being executed inside the corresponding Singularity container.
 
 ### 2. Unload a Module
-module-manager unload <module-name>
+```
+$ module-manager unload <module-name>
+```
 
-
-Removes the command wrappers for the module
-Updates your "loaded modules" list
+- Removes the command wrappers for the module
+- Updates your "loaded modules" list
 
 **Example:**
-module-manager unload bcftools
+```
+$ module-manager unload bcftools
+```
 
 ### 3. Restore All Modules
-module-manager restore
-
+```
+$ module-manager restore
+```
 
 Use this after a logout/reboot to restore all previously loaded modules. Most of the time this won’t be needed, as Module Manager preserves last state.
 
 ### 4. List Available Modules
-module-manager list-available
-
+```
+$ module-manager list-available
+```
 
 Shows all available modules.
 
 ### 5. List Currently Loaded Modules
-module-manager list-loaded
+```
+$ module-manager list-loaded
+```
 
 Displays all modules you've loaded, along with the commands they expose.
 
 ### 6. Check Module Status
-module-manager status <module-name>
-
+```
+$ module-manager status <module-name>
+```
 
 Gives a detailed view of:
   - Whether the module exists
@@ -120,18 +133,19 @@ Gives a detailed view of:
   - Which commands are available
 
 ### 7. Unload All Modules
-module-manager unload-all
-
+```
+$ module-manager unload-all
+```
 
 Removes all active modules and their command wrappers.
 
 # Frequently Asked Questions
 ### Where do my modules come from?
 They live in /genesandhealth/library-red/modules. Your admin or team lead might maintain these.
-Tips
-You can load multiple modules at once. They won't interfere with each other unless they export the same command names. 
 
-Use status before loading or unloading a module to see what's going on.
+!!! Tips
+    You can load multiple modules at once. They won't interfere with each other unless they export the same command names. 
+    Use status before loading or unloading a module to see what's going on.
 
 # Need Help?
 If you're facing issues or want to request a new module, contact your TRE system administrator or support team **(hgi@sanger.ac.uk)**.
