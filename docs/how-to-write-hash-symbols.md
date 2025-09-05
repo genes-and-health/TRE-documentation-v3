@@ -17,17 +17,11 @@ Try these options:
 | **Windows (US layout)** | <kbd>Shift</kbd> + <kbd>3</kbd> |
 | **Windows (UK layout)** | <kbd>AltGr</kbd> + <kbd>3</kbd> |
 
----
-
 If the direct key isn’t available or doesn’t work in your environment try the next option:  
 
-## OS-specific Methods
+## Raw unicode method
 
 - **Ubuntu / Linux (TRE)** → Use <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>U</kbd> `23` <kbd>Enter</kbd>  
-- **macOS** → Use <kbd>Option</kbd> + `0023`  
-- **Windows** → Use <kbd>Alt</kbd> + `35` (on the numeric keypad)  
-
----
 
 ## If the Above Methods Do Not Work
 
