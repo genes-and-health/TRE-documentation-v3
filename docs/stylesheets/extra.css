@@ -31,7 +31,7 @@
 
 /* Apply shimmering animated background to MkDocs Material header */
 .md-header {
-  animation: shimmering-background 8s var(--easing__linear) 1;
+  animation: shimmering-background 8s linear 1;
   animation-delay: 3s;
   animation-fill-mode: forwards;
   background: linear-gradient(
