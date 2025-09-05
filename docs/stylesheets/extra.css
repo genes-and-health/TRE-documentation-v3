@@ -7,7 +7,7 @@
   --tw-text-opacity: 1;
   --tw-bg-opacity: 1;
   --gh-cobalt-blue: rgb(50 68 155 / var(--tw-bg-opacity, 1));
-  --gh-emerald-green: rgb(69 191 135/var(--tw-text-opacity,1));
+  --gh-emerald-green: rgb(69 191 135/var(--tw-text-opacity,1)); 
 }
 
 .bg-blue {
