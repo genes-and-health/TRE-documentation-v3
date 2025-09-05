@@ -2,7 +2,7 @@
 
 Apologies, this is a bit tricky! 
 
-## Typing `#` Directly (by OS and Keyboard Layout)
+## Typing `#` Directly
 
 Try these options:
 
