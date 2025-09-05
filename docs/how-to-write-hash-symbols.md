@@ -19,7 +19,9 @@ If the direct key isn’t available or doesn’t work in your environment try th
 
 ## Raw unicode method
 
-- **Ubuntu / Linux (TRE)** → Use <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>U</kbd> `23` <kbd>Enter</kbd>  
+- **Ubuntu / Linux (TRE)** → Use <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>U</kbd>
+  You should see a "u" appear, underlined, at your cursor
+  Type `23` followed by <kbd>Enter</kbd>  
 
 ## If the Above Methods Do Not Work
 
