@@ -13,6 +13,7 @@ theme:
     - navigation.footer
     - navigation.sections   # show section headers in the left nav
     - navigation.indexes    # make section index pages clickable
+    - navigation.path
     # Optional behaviors:
     # - navigation.expand   # expand all sections by default (user can still collapse)
     # - toc.integrate       # puts the current page’s headings under it in the left nav  
