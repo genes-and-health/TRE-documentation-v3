@@ -27,48 +27,6 @@ Genes & Health TRE data are stored in Google Cloud Storage (GCS) buckets (on a s
 
 The concept of a physical directory does not rightly exist in GCS. Rather, directories are “simulated” by GCS from the files name. This can be illustrated as follows:  
 
-
-<!--
-``` mermaid
-graph LR
-  A[Start] --> B{Error?};
-  B -->|Yes| C[Hmm...];
-  C --> D[Debug];
-  D --> B;
-  B ---->|No| E[Yay!];
-```
-
-``` mermaid
-graph TD
-  Bucket --> A[Folder_A_Simulated];
-  A --> AObj1[Obj1.txt];
-  A --> AObj2[Obj2.txt];
-
-  Bucket --> B[Folder_B_Simulated];
-  B --> BObj3[Obj3.txt];
-
-  B --> BD[Folder_B_D_Simulated];
-  BD --> BDObj3[Obj3.txt];
-  BD --> BDObj4[Obj4.txt];
-
-```
-
-``` mermaid
-graph TD
-  Bucket --> A[Folder A/\n(Simulated)];
-  A --> AObj1[A/Obj1.txt];
-  A --> AObj2[A/Obj2.txt];
-
-  Bucket --> B[Folder B/\n(Simulated)];
-  B --> BObj3[B/Obj3.txt];
-
-  B --> BD[Folder B/D/\n(Simulated)];
-  BD --> BDObj3[B/D/Obj3.txt];
-  BD --> BDObj4[B/D/Obj4.txt];
-```
--->
-
-
 ![](images/sandboxes-and-folder-structures/bucket-structure.png)
 
 
