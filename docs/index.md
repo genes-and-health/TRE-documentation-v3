@@ -8,7 +8,7 @@
  
     <a href="page2.md" class="md-button md-button--primary">How to guide</a>
   
-    <a href="page3.md" class="md-button md-button--primary">Explainers</a>
+    <a href="explainers.md" class="md-button md-button--primary">Explainers</a>
   
     <a href="page4.md" class="md-button md-button--primary">Other documents</a>
 
