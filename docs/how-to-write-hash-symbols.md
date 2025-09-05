@@ -4,7 +4,7 @@ Apologies, this is tricky\! Either copy paste it in using the Clipboard, or from
 
 Or if you must you can type as follows:
 
-* Press Ctrl+Shift+u (it has to be Ctrl, not Command)
+* Press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>U</kbd> (it has to be Ctrl, not Command)
 
 * You should see a "u" appear, underlined, at your cursor
 
