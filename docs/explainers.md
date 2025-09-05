@@ -107,7 +107,7 @@ For most users and use cases, this documment should serve as a reference guide o
 
 ## Phenotype Curation (UNDER CONSTRUCTION)
 
-This page provides a few examples of how the raw health data in the TRE have been curated to produce useful output for a range of analyses. The files used in the examples below are all located in genesandhealth/library-red, please see the [page describing TRE file structures](#folder-structures) for further information. An overview of the different datafiles are available in the [raw phenotype data page](#what-do-the-raw-data-look-like)
+This page provides a few examples of how the raw health data in the TRE have been curated to produce useful output for a range of analyses. The files used in the examples below are all located in genesandhealth/library-red, please see the [page describing TRE file structures](folder-and-bucket-structure.md/#library-red) for further information. An overview of the different datafiles are available in the [raw phenotype data page](#what-do-the-raw-data-look-like)
 
 ### Tools
 
