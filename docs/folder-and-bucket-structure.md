@@ -3,6 +3,7 @@
 Folders are suffixed with red or green to indicate the type of data that is stored there. Red is for potentially sensitive data that should not be shared outside. Green is for data that can be shared with the outside world. When you log into your sandboxes, you will have a number of folders available for you. To get started, we will concentrate on the **library-red**, **red**, and **home** folders.
 
 This [reference page](#folder-structures) goes through the other folders and explains what they are for and how they should be used. The following is a high-level overview of the directories in the TRE:  
+
 ![](images/sandboxes-and-folder-structures/sandbox-diagram.png)
 
 ## library-red
