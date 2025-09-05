@@ -107,16 +107,17 @@ nav:
 #  - Developer requests: developer-requests.md
   - How to use docker: how-to-use-docker.md
   - How to write hash symbols: how-to-write-hash-symbols.md
-  - How to get your data in: how-to-get-your-data-in.md
-  - Copying text in: copying-text-in.md
-  - Getting user data into the TRE: getting-user-data-into-the-tre.md
-  - How to increase disk size​: how-to-increase-disk-size​.md
-  - Requesting data out of the TRE: requesting-data-out-of-the-tre.md
-  - Getting your results out: getting-your-results-out.md
-  - What is allowed out?: what-is-allowed-out?.md
-  - Existing data: existing-data.md
-  - Requesting data: requesting-data.md
-  - Accessing TRE data from external systems/internet: accessing-tre-data-from-external-systems/internet.md
+  - Getting data in and out of the TRE: 
+      - How to get your data in: getting-data-in-and-out-of-the-TRE/how-to-get-your-data-in.md
+      - Requesting data out of the TRE: getting-data-in-and-out-of-the-TRE/requesting-data-out-of-the-tre.md
+  # - Copying text in: copying-text-in.md
+  # - Getting user data into the TRE: getting-user-data-into-the-tre.md
+  # - How to increase disk size​: how-to-increase-disk-size​.md
+  # - Getting your results out: getting-your-results-out.md
+  # - What is allowed out?: what-is-allowed-out?.md
+  # - Existing data: existing-data.md
+  # - Requesting data: requesting-data.md
+  # - Accessing TRE data from external systems/internet: accessing-tre-data-from-external-systems/internet.md
   - Explainers: explainers.md
 #  - How is data linked: how-is-data-linked.md
 #  - Where are the data from: where-are-the-data-from.md
