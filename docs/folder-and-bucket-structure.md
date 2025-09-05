@@ -27,6 +27,8 @@ Genes & Health TRE data are stored in Google Cloud Storage (GCS) buckets (on a s
 
 The concept of a physical directory does not rightly exist in GCS. Rather, directories are “simulated” by GCS from the files name. This can be illustrated as follows:  
 
+
+<!--
 ``` mermaid
 graph LR
   A[Start] --> B{Error?};
@@ -64,9 +66,12 @@ graph TD
   BD --> BDObj3[B/D/Obj3.txt];
   BD --> BDObj4[B/D/Obj4.txt];
 ```
+-->
 
 
 ![](images/sandboxes-and-folder-structures/bucket-structure.png)
+
+
 In the image above, the filenames are “A/Obj1.txt”, “A/Obj2.txt”, “B/Obj3.txt”, “B/D/Obj3.txt” and “B/D/Obj4.txt” and the files simply exists a files in the bucket with those filenames. Bucket folders ‘A/’ and ‘B/’ and the sub-folder ‘D/’ are simulated. This means that is you were to delete “A/Obj1.txt” and “A/Obj2.txt”, the simulated folder “A/” would disappear (there would no longer be filenames justifying its existence). However, if you were to delete file “B/Obj3.txt”, both simulated folder ‘B/’ and sub-folder ‘D/’ would remains as they would be accounted for by filenames “B/D/Obj3.txt” and “B/D/Obj4.txt”. In the rest of this guide, when we refer to (GCS) directories, we refer to such simulated directories.
 
 #### **G&H GCS Bucket URLs**
