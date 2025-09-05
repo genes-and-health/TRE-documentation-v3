@@ -1,7 +1,5 @@
 # How to write hash (`#`) symbols in the TRE
 
-<div font-size="64">#</div>
-
 Apologies, this is a bit tricky! 
 
 ## Typing `#` Directly (by OS and Keyboard Layout)
