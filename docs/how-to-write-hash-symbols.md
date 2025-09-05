@@ -1,11 +1,31 @@
-# How to write hash symbols {#how-to-write-hash-symbols}
+# How to write hash (`#`) symbols in the TRE
 
-Apologies, this is tricky\! Either copy paste it in using the Clipboard, or from an existing document/script already in the TRE.
+Apologies, this is a bit tricky! 
 
-Or if you must you can type as follows:
+Try these methods:
 
-* Press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>U</kbd> (it has to be Ctrl, not Command)
+- **Ubuntu / Linux (TRE)** → Use <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>U</kbd> `23` <kbd>Enter</kbd>  
+- **macOS** → Use <kbd>Option</kbd> + `0023`  
+- **Windows** → Use <kbd>Alt</kbd> + `35` (on the numeric keypad)  
 
-* You should see a "u" appear, underlined, at your cursor
+If the above methods do not work:
 
-* Type "23", then press Enter
+Try:
+
+- **Copy/paste** the `#` character from your clipboard, or from an existing document/script already inside the TRE.
+
+Or try typing directly:
+
+1. Press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>U</kbd>  
+   > You should now see a small, underlined **`u`** at your cursor.  
+
+2. Type `23`  
+
+3. Press <kbd>Enter</kbd>  
+
+This will insert a `#`.
+
+---
+
+
+
