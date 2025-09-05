@@ -91,7 +91,9 @@ Same storage type as **/genesandhealth/library-red**, see comments above.
 
 Access as for **consortiumpriorityperiod-library-red** but with external download (e.g. gsutil) enabled. Used for results. Not for individual level data.
 
-**gs://qmul-sandbox-production-library-consortiumpriorityperiod-green**
+```
+gs://qmul-sandbox-production-library-consortiumpriorityperiod-green
+```
 
 ### Other folders
 
@@ -113,7 +115,9 @@ This is slower storage of large capacity (\>8 PiB @ Feb 2022\)
 
 We also maintain a bucket for public datasets. This is not visible from within the TRE. Much of the data is mirrored in genesandhealth/library-green/ within the TRE.
 
+```
 gs://genesandhealth\_publicdatasets/
+```
 
 ### Copying between Google Buckets within the TRE
 
