@@ -31,8 +31,8 @@
 
 /* Apply shimmering animated background to MkDocs Material header */
 .md-header {
-  animation: shimmering-background 8s linear infinite;
-  animation-delay: 3s;
+  animation: shimmering-background 42s linear infinite;
+  animation-delay: 42s;
   animation-fill-mode: forwards;
   background: linear-gradient(
     90deg,
