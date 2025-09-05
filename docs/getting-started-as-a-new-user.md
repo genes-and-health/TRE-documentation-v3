@@ -1,8 +1,6 @@
 # **Getting started as a new user**
 
-STU WOZ HERE 2025-07-24
-
-### Steps to get access 
+## Steps to get access 
 
 * All users must read and accept the [Genes & Health Code of Conduct](https://e4c14f23.tre-documentation.pages.dev/assets/files/TRE_User_Code_of_Conduct_5.0-4fb0174879dd67ccf5dc610fd014d9c2.pdf).  
 * All users must complete the [NHS Data Security Awareness Level 1](https://www.e-lfh.org.uk/programmes/data-security-awareness/) training before they're granted access to Genes and Health data.
@@ -55,7 +53,7 @@ You will be offered a variety of virtual machine types.
 **Warning:** Choose the Basic machine unless a script requires high memory or increased CPU capacity, and is ready to go. Test your script on the Basic machine first, as other options are more expensive.  
 **Note:** Some machine types have many CPUs, which are suitable for multithreaded applications like plink or regenie that can fully utilise them. These applications may sometimes run input/output operations too quickly for standard Google bucket storage, requiring you to copy key files to faster local storage (see below).
 
-### Choosing a custom machine configuration
+## Choosing a custom machine configuration
 
 It is possible that sometimes you may require a Virtual Machine that offers resources different to the standard flavors i.e. higher-memory, higher-cpu or memory-optimised instances. You can choose a custom VM configuration from the **Virtual Machines** page by expanding the **Use custom Virtual Machine profile** section at the bottom.  
 ![Custom Virtual Machine profile](images/sandboxes-and-folder-structures/custom-virtual-machine-profile.png)
