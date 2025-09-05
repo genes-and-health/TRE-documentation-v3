@@ -36,13 +36,16 @@ We have installed IGV to run from the Linux Terminal command line (not the web b
 
 Example for the 5236 Wellcome Sanger Institute low depth exomes:
 
-| /usr/local/bin/IGV\_Linux\_2.12.3/igv.sh \--genome /genesandhealth/library-red/genesandhealth/exome\_seq/2019\_11\_\_5236\_GNHonly/crams/hs38DH.fa/genesandhealth/library-red/genesandhealth/exome\_seq/2019\_11\_\_5236\_GNHonly/crams/sc\_autozygELGH6823965.cramb |
-| :---- |
+```
+/usr/local/bin/IGV\_Linux\_2.12.3/igv.sh \
+--genome /genesandhealth/library-red/genesandhealth/exome\_seq/2019\_11\_\_5236\_GNHonly/crams/hs38DH.fa/genesandhealth/library-red/genesandhealth/exome\_seq/2019\_11\_\_5236\_GNHonly/crams/sc\_autozygELGH6823965.cramb 
+```
 
 The default set of (hg19) files for IGV are found here
 
-| /genesandhealth/library-green/sanger/igv/ |
-| :---- |
+```
+/genesandhealth/library-green/sanger/igv/ 
+```
 
 #### **LibreOffice**
 
@@ -56,8 +59,8 @@ Git is available from the Linux command line for single user use and has some li
 
 The file browser for Xfce is called 'Thunar'. Settings and defaults should persist between sessions but do not always.
 
-Detailed view \[ctrl \+ 2\]  
-New tab \[ctrl \+ t\] (only works if the TRE is in fullscreen mode \- Chrome will create a new tab otherwise)
+Detailed view \[<kbd>ctrl</kbd> \+ <kbd>2</kbd>\]
+New tab \[<kbd>ctrl</kbd> \+ <kbd>T</kbd>\] (only works if the TRE is in fullscreen mode \- Chrome will create a new tab otherwise)
 
 ## How to get new software installed
 
