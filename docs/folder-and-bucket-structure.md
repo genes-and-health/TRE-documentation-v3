@@ -36,7 +36,7 @@ In the image above, the filenames are “A/Obj1.txt”, “A/Obj2.txt”, “B/O
 #### **G&H GCS Bucket URLs**
 
 On the TRE, /red/ “lives” on the file system (/genesandhealth/red/) as shown below:  
-![][image5]
+![](images/sandboxes-and-folder-structures/file-manager-red.png)
 
 Physically though, as the /red/ bucket is stored on a Google Cloud file server, it has a Uniform Resource Locator (URL). The URL will depend on the sandbox you use.  
 For sandbox-1, the URL is gs://qmul-production-sandbox-1-red/ and, predictably, you need to change the number in the URL to match your sandbox number. When moving things to and from the red bucket using either gcloud (Option 2\) or file mounting (Option 3), you will need to use the URL.
@@ -45,10 +45,11 @@ For sandbox-1, the URL is gs://qmul-production-sandbox-1-red/ and, predictably, 
 
 Once you have located the file/folder you want to copy into red, right click on that object and select “Upload to red bucket”:
 
-![][image6]
+![](images/sandboxes-and-folder-structures/upload-to-red-bucket-contextual-menu.png)
 
 A new window will then pop-up allowing you to select where in red you want this data to go (“red” is the top directory in red so it’s recommended you navigate to a personal or project red directory before selecting “OK”):  
-![][image7]
+
+![](images/sandboxes-and-folder-structures/select-or-create-folder.png)
 
 * You can use the “Browse” button to find and select existing directories in red.
 
@@ -56,7 +57,7 @@ A new window will then pop-up allowing you to select where in red you want this 
 
 * Selecting “OK” will begin the copying process into the directory chosen and you will see a new window documenting the outcome, for example:   
     
-  ![][image8]
+![](images/sandboxes-and-folder-structures/upload-to-red-bucket-progress-bar.png)
 
 ## Folder structures
 
