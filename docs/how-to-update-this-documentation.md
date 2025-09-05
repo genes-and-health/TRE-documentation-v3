@@ -1,4 +1,3 @@
-
 # How to Update this Documentation
 
 Welcome! This page is part of the documentation itself — and serves as your guide for contributing updates to it.
@@ -199,5 +198,3 @@ If you're missing access, contact a maintainer or administrator.
 Open a ticket, check the `README.md`, or reach out in the internal documentation channel.
 
 Happy writing!
-
-## STU WOZ HERE
