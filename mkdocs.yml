@@ -15,7 +15,7 @@ theme:
     - navigation.indexes    # make section index pages clickable
     - navigation.path
     # Optional behaviors:
-    # - navigation.expand   # expand all sections by default (user can still collapse)
+    - navigation.expand   # expand all sections by default (user can still collapse)
     # - toc.integrate       # puts the current page’s headings under it in the left nav  
   palette: 
   # Palette toggle for light mode
