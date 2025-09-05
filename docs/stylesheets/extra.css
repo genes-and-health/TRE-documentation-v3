@@ -31,9 +31,8 @@
 
 /* Apply shimmering animated background to MkDocs Material header */
 .md-header {
-  animation: shimmering-background 42s linear infinite;
+  animation: shimmering-background 50s linear infinite;
   animation-delay: 42s;
-  animation-fill-mode: forwards;
   background: linear-gradient(
     90deg,
     var(--gh-cobalt-blue) 0%,
@@ -44,15 +43,21 @@
   background-size: 200% 200%;
 }
 
-/* Keyframes for the shimmering effect */
 @keyframes shimmering-background {
+  /* Start shimmering */
   0% {
     background-position: 200% 0;
   }
+  16% { /* 8s out of 50s = 16% */
+    background-position: -200% 0;
+  }
+
+  /* Hold still for the remaining 42s */
   100% {
     background-position: -200% 0;
   }
 }
+
 
 
 /* Example: Set all headings to G&H Cobalt Blue */
