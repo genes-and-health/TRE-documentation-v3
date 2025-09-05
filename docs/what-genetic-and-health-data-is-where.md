@@ -7,7 +7,9 @@ PseudoNHS number serves as a unique identifier for individuals and is used for h
 There is a file linking Oragene ID (for genetics & questionnaire data) with PseudoNHS number (for NHS e-health record data). This file may get updated and re-dated:
 
 ```
-/library-red/genesandhealth/2022\_05\_12\_pseudoNHS\_oragene\_withmissing\_DEIDENTIFIED.txt
+/library-red
+└── genesandhealth
+    └── 2022_05_12_pseudoNHS_oragene_withmissing_DEIDENTIFIED.txt
 ```
 
 Illumina GSAv3EAMD genotyping chip and TOPMed-r2 imputation data:
