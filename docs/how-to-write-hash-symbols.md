@@ -21,7 +21,8 @@ If the direct key isn’t available or doesn’t work in your environment try th
 
 - **Ubuntu / Linux (TRE)** → Use <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>U</kbd>
 
-!!!tip You should see a "u" appear, underlined, at your cursor
+!!! tip 
+    You should see a "u" appear, underlined, at your cursor
 
 Type `23` followed by <kbd>Enter</kbd>  
 
