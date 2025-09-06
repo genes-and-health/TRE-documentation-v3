@@ -3,7 +3,7 @@
 (newest shown first)
 
 2025-MAY-20 by DVH  
-:    Begun release of 55k exome ExWAS to Consortium1 partners. Quant traits initially, to be followed by binary traits.  
+>    Begun release of 55k exome ExWAS to Consortium1 partners. Quant traits initially, to be followed by binary traits.  
 gs://qmul-production-library-consortiumpriorityperiod-red/Callsets/2024\_05\_55kCallset/release\_2025-JUN-16\_ExWAS/
 
 2025-MAY-05 by DVH  
