@@ -32,25 +32,25 @@ gs://qmul-production-library-consortiumpriorityperiod-red/gvcfs/
 ## 2025-MAR-25 by DVH  
 >    Removal of some files in previous Barts Health phenotypes\_raw datasets, and replacement with more highly redacted versions:  
 >  
->    **Deleted**  
+>    **Deleted:**  
 >    `gs://qmul-production-library-red/genesandhealth/phenotypes\_rawdata/DSA\_\_BartsHealth\_NHS\_Trust/2024\_09\_ResearchDataset/RDE\_Measurements.ascii.redacted.tab`   
 >    **Replaced with:**   
 >   `gs://qmul-production-library-red/genesandhealth/phenotypes\_rawdata/DSA\_\_BartsHealth\_NHS\_Trust/2024\_09\_ResearchDataset/RDE\_Measurements.ascii.redacted2.tab`  
 > 
->    **Deleted**  
+>    **Deleted:**  
 >    `gs://qmul-production-library-red/genesandhealth/phenotypes\_rawdata/DSA\_\_BartsHealth\_NHS\_Trust/2023\_12\_ResearchDatasetv1.6/GandH\_Measurements\_\_20240423.ascii.redacted.tab`  
 >    **Replaced with:**  
 >    `gs://qmul-production-library-red/genesandhealth/phenotypes\_rawdata/DSA\_\_BartsHealth\_NHS\_Trust/2023\_12\_ResearchDatasetv1.6/GandH\_Measurements\_\_20240423.ascii.redacted2.tab`  
 >
->    **Deleted** \- we do not think this file is used at all, so have not replaced.  
+>    **Deleted:** \- we do not think this file is used at all, so have not replaced.  
 >    `gs://qmul-production-library-red/genesandhealth/phenotypes\_rawdata/DSA\_\_BartsHealth\_NHS\_Trust/2023\_12\_ResearchDatasetv1.6/in-beta-testing/GH\_RAW\_Pathology\_\_20231211.ascii.redacted.tab`  
 >
->    **Deleted**  
+>    **Deleted:**  
 >    `gs://qmul-production-library-red/genesandhealth/phenotypes\_rawdata/DSA\_\_BartsHealth\_NHS\_Trust/2024\_09\_ResearchDataset/RDE\_Pathology.ascii.nohisto.redacted.csv`  
 >    **Replaced with:**  
 >    `gs://qmul-production-library-red/genesandhealth/phenotypes\_rawdata/DSA\_\_BartsHealth\_NHS\_Trust/2024\_09\_ResearchDataset/RDE\_Pathology.ascii.nohisto.redacted2.csv`  
 >
->    **Deleted**  
+>    **Deleted:**  
 >    `gs://qmul-production-library-red/genesandhealth/phenotypes\_rawdata/DSA\_\_BartsHealth\_NHS\_Trust/2023\_12\_ResearchDatasetv1.6/GH\_Pathology\_\_20231218.ascii.nohisto.redacted.tab`
 >    **Replaced with: **  
 >    `gs://qmul-production-library-red/genesandhealth/phenotypes\_rawdata/DSA\_\_BartsHealth\_NHS\_Trust/2023\_12\_ResearchDatasetv1.6/GH\_Pathology\_\_20231218.ascii.nohisto.redacted2.tab`
