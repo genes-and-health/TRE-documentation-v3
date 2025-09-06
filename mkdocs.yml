@@ -57,9 +57,9 @@ markdown_extensions:
   - md_in_html
 nav:
   - How to update this documentation: how-to-update-this-documentation.md
+  - What is a TRE ?: what-is-a-tre-?.md
   - Getting started as a new user: getting-started-as-a-new-user.md
   - Latest TRE data updates and changes: latest-tre-data-updates-and-changes.md
-  - What is a TRE ?: what-is-a-tre-?.md
 #  - Trusted Research Environment (TRE): heading=h.vhgcd46bp2tb.md
   - Sandboxes and what each sandbox can access: sandboxes-and-what-each-sandbox-can-access.md
 #  - Pre-requisites: heading=h.ufs01g6l9ifw.md
@@ -115,7 +115,7 @@ nav:
       - Requesting data out of the TRE: getting-data-in-and-out-of-the-TRE/requesting-data-out-of-the-TRE.md
   # - Copying text in: copying-text-in.md
   # - Getting user data into the TRE: getting-user-data-into-the-tre.md
-  # - How to increase disk size​: how-to-increase-disk-size​.md
+  - How to increase disk size​: how-to-increase-disk-size​.md
   # - Getting your results out: getting-your-results-out.md
   # - What is allowed out?: what-is-allowed-out?.md
   # - Existing data: existing-data.md
