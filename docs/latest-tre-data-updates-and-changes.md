@@ -136,7 +136,7 @@
 >             └── 2023_12_ResearchDatasetv1.6
 >                 └── GH_Pathology__20231218.ascii.nohisto.redacted.tab
 >  ```
->  **Replaced with: **
+>  **Replaced with:**
 >  ```
 >  gs://qmul-production-library-red
 >  └── genesandhealth
