@@ -7,7 +7,8 @@
 >  ```
 >  gs://qmul-production-library-consortiumpriorityperiod-red
 >  └── Callsets
->      └── 2024_05_55kCallset/release_2025-JUN-16_ExWAS/
+>      └── 2024_05_55kCallset
+>          └── release_2025-JUN-16_ExWAS/
 >  ```
 
 ## 2025-MAY-05 by DVH  
