@@ -11,4 +11,4 @@ The /home disk will be extended to the new size and previous data will be retain
 
 ![](images/sandboxes-and-folder-structures/resize-home-disk.png)
 
-**Note:** Please note that it is recommended to store long-term data in the red bucket and we advise to not treat the /home directory as your permanent storage location. Disk size can be increased upto 1000G.
+**Note:** Please note that it is recommended to store long-term data in the red bucket and we advise to not treat the /home directory as your permanent storage location. Disk size can be increased upto 1000 GB.
