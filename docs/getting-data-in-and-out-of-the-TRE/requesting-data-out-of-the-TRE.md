@@ -1,20 +1,18 @@
-## Requesting data out of the TRE {#requesting-data-out-of-the-tre}
-
-### Getting your results out {#getting-your-results-out}
+## Getting your results out {#getting-your-results-out}
 
 You might be wondering how do I get my results of my analytical code out into the world so they can be used in publications or other studies.
 
-### What is allowed out? {#what-is-allowed-out?}
+## What is allowed out? {#what-is-allowed-out?}
 
 Individual level data is not allowed out of the TRE. Any data out requests are reviewed by the Genes & Health core team to make sure they do not contain individual level data. Summary statistics, graphs etc are all usually fine. For more information, please read the below policy document:
 
 [Download file](https://tre-documentation.pages.dev/assets/files/Policy_v2.5-80709d7b5dc8efbfa0e6032e39fae765.pdf): Policy \- open disclosure of phenotypes and variants with counts and small numbers \- v2.5
 
-### Existing data {#existing-data}
+## Existing data {#existing-data}
 
 There are a number of files in library-green that are available for download. These do not need a request to be made.
 
-### Requesting data {#requesting-data}
+## Requesting data {#requesting-data}
 
 You can make a request to download your results by right-clicking the file and selecting "request file download" for any file in:
 
