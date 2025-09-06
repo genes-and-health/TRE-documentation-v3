@@ -11,7 +11,7 @@ theme:
     - content.code.annotate
     - content.action.edit
     - navigation.footer
-    - navigation.sections   # show section headers in the left nav
+    # - navigation.sections   # show section headers in the left nav
     # - navigation.indexes    # make section index pages clickable
     - navigation.path
     # Optional behaviors:
