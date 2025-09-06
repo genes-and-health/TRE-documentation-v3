@@ -73,10 +73,10 @@
 >  ```
 >   gs://qmul-production-library-red
 >   └── genesandhealth
->     └── phenotypes_rawdata
->         └── DSA__BartsHealth_NHS_Trust
->             └── 2024_09_ResearchDataset
->                 └── RDE_Measurements.ascii.redacted2.tab
+>       └── phenotypes_rawdata
+>           └── DSA__BartsHealth_NHS_Trust
+>               └── 2024_09_ResearchDataset
+>                   └── RDE_Measurements.ascii.redacted2.tab
 >  ```
 > 
 >  **Deleted:**  
@@ -96,8 +96,9 @@
 >         └── DSA__BartsHealth_NHS_Trust
 >             └── 2023_12_ResearchDatasetv1.6
 >                └──  GandH_Measurements__20240423.ascii.redacted2.tab
->  ```>
->  **Deleted:** \- we do not think this file is used at all, so have not replaced.
+>  ```
+>  
+>  **Deleted:** - we do not think this file is used at all, so have not replaced.
 >  ```
 >  gs://qmul-production-library-red
 >  └── genesandhealth
