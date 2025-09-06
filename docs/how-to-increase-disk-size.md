@@ -9,6 +9,6 @@ By default, your /home directory's disk size is 100G. If you need to increase th
 
 The /home disk will be extended to the new size and previous data will be retained.
 
-![](sandboxes-and-folder-structures/resize-home-disk.png)
+![](images/sandboxes-and-folder-structures/resize-home-disk.png)
 
 **Note:** Please note that it is recommended to store long-term data in the red bucket and we advise to not treat the /home directory as your permanent storage location. Disk size can be increased upto 1000G.
