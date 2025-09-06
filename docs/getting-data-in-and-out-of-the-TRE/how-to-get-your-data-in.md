@@ -1,12 +1,10 @@
-## How to get your data in {#how-to-get-your-data-in}
-
 Sometimes it is necessary to get data or code into the TRE. As the TRE is shut off from the internet this presents a challenge. This guide explains how to do this.
 
-### Copying text in {#copying-text-in}
+## Copying text in {#copying-text-in}
 
 A small amount of text can be pasted in from external systems using the Clipboard tool. This does not allow copy/paste out. This might be useful should you need to copy in a difficult to write function for example.
 
-### Getting user data into the TRE {#getting-user-data-into-the-tre}
+## Getting user data into the TRE {#getting-user-data-into-the-tre}
 
 You can upload data to your Sandbox specific green-uploads bucket, which you can find using the table below:
 
