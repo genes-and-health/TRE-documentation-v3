@@ -78,7 +78,7 @@
 >               └── 2024_09_ResearchDataset
 >                   └── RDE_Measurements.ascii.redacted2.tab
 >  ```
-> 
+>  ---
 >  **Deleted:**  
 >  ```
 >  gs://qmul-production-library-red
@@ -97,7 +97,7 @@
 >             └── 2023_12_ResearchDatasetv1.6
 >                └──  GandH_Measurements__20240423.ascii.redacted2.tab
 >  ```
->  
+>  ---
 >  **Deleted:** - we do not think this file is used at all, so have not replaced.
 >  ```
 >  gs://qmul-production-library-red
@@ -105,9 +105,10 @@
 >      └── phenotypes_rawdata
 >         └── DSA__BartsHealth_NHS_Trust
 >             └── 2023_12_ResearchDatasetv1.6
->                 └── in-beta-testing/GH_RAW_Pathology__20231211.ascii.redacted.tab
+>                 └── in-beta-testing
+>                     └── GH_RAW_Pathology__20231211.ascii.redacted.tab
 >  ```
->
+>  ---
 >  **Deleted:**  
 >  ```
 >  gs://qmul-production-library-red
@@ -126,7 +127,7 @@
 >             └── 2024_09_ResearchDataset
 >                 └── RDE_Pathology.ascii.nohisto.redacted2.csv
 >  ```
->  
+>  ---
 >  **Deleted:**  
 >  ```
 >  gs://qmul-production-library-red
