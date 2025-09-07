@@ -35,7 +35,7 @@ See also [this document](https://docs.google.com/spreadsheets/d/1ipwdF2j_owfr_Qb
 'Raw' phenotype and health record data (NHS numbers pseudonymised, and de identified of names, postcodes, dates of birth etc).
 
 ```
-/library-red/genesandhealth/phenotypes\_rawdata/
+/library-red/genesandhealth/phenotypes_rawdata/
 ```
 
 Data is organised by provider and data sharing agreement. This is so we can easily change access if any of the terms of data sharing change.
