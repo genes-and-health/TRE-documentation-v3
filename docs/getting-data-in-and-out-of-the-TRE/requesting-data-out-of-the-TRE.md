@@ -59,7 +59,7 @@ Login to gcloud with:
 
 
 ```
-\_gcloud auth login\_ 
+gcloud auth login
 ```
 
 Login with your [username@genesandhealth.qmul.ac.uk](mailto:username@genesandhealth.qmul.ac.uk) that you use for TRE access from your browser. It is likely to ask you for 2 Factor Authentication either via phone or via a website link.
@@ -67,11 +67,11 @@ Login with your [username@genesandhealth.qmul.ac.uk](mailto:username@genesandhea
 From a multicore Linux server, and especially if you are trying to transfer lots of data/files
 
 ```
-gcloud storage buckets list gs://qmul-sandbox\-production-library-green/\_ 
+gcloud storage buckets list gs://qmul-sandbox-production-library-green/
 ```
 
 To transfer file use:
 
 ```
-gcloud storage cp \<local-file-path\> gs://\<bucket-name\>/\<destination-path\> 
+gcloud storage cp <local-file-path> gs://<bucket-name>/<destination-path> 
 ```
