@@ -23,13 +23,14 @@
   background-color: rgb(50 68 155 / var(--tw-bg-opacity, 1));
 }*/
 
-/*
+
 .md-header {
   background-color: --gh-cobalt-blue / var(--tw-bg-opacity, 1));
 }
-*/
+
 
 /* Apply shimmering animated background to MkDocs Material header */
+/*
 .md-header {
   animation: shimmering-background 50s linear infinite;
   animation-delay: 42s;
@@ -42,6 +43,7 @@
   );
   background-size: 200% 200%;
 }
+*/
 
 @keyframes shimmering-background {
   /* Start shimmering */
