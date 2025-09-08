@@ -1,4 +1,4 @@
-# **Getting started as a new user**
+# Getting started as a new user
 
 ## Steps to get access 
 
@@ -17,8 +17,8 @@ These steps are important for our  [NHS Digital Data Security and Protection Too
 ## Setting up a profile
 
 When first set up, users will get an email from Google (to their normal email address). This will have a username@genesandhealth.qmul.ac.uk username. You need to Add this as a Profile in Google Chrome. Please do not try to use any other browser than Google Chrome\!  
-**Note:** This username is not an email address, and we will not send email to it. It cannot receive email; it is just a username for the TRE.  
-Once you have done this, go to Manage Your Account and Security and turn 2 Step Verification on. You will need to enter a phone number and get a code by SMS/text message. You cannot access the TRE without this enabled.
+!!! note
+    This username is not an email address, and we will not send email to it. It cannot receive email; it is just a username for the TRE.  Once you have done this, go to Manage Your Account and Security and turn 2 Step Verification on. You will need to enter a phone number and get a code by SMS/text message. You cannot access the TRE without this enabled.
 
 ## Starting the TRE
 
@@ -50,19 +50,25 @@ If you want to go a specific sandbox, you can use the following URL table:
 Once logged in, you will be taken to the **Virtual Machines** page where you can start a new machine or connect to an existing one.  
 ![Virtual Machine options](images/sandboxes-and-folder-structures/virtual-machine-options.png)
 You will be offered a variety of virtual machine types.  
-**Warning:** Choose the Basic machine unless a script requires high memory or increased CPU capacity, and is ready to go. Test your script on the Basic machine first, as other options are more expensive.  
-**Note:** Some machine types have many CPUs, which are suitable for multithreaded applications like plink or regenie that can fully utilise them. These applications may sometimes run input/output operations too quickly for standard Google bucket storage, requiring you to copy key files to faster local storage (see below).
+!!! warning
+    Choose the Basic machine unless a script requires high memory or increased CPU capacity, and is ready to go. Test your script on the Basic machine first, as other options are more expensive.  
 
-## Choosing a custom machine configuration
+!!! note
+    Some machine types have many CPUs, which are suitable for multithreaded applications like plink or regenie that can fully utilise them. These applications may sometimes run input/output operations too quickly for standard Google bucket storage, requiring you to copy key files to faster local storage (see below).
+
+### Choosing a custom machine configuration
 
 It is possible that sometimes you may require a Virtual Machine that offers resources different to the standard flavors i.e. higher-memory, higher-cpu or memory-optimised instances. You can choose a custom VM configuration from the **Virtual Machines** page by expanding the **Use custom Virtual Machine profile** section at the bottom.  
 ![Custom Virtual Machine profile](images/sandboxes-and-folder-structures/custom-virtual-machine-profile.png)
-**Warning:** Choose the Use custom Virtual Machine profile only when absolutely necessary, use Basic machine unless a script requires high memory or increased CPU capacity. Excess use of higher-spec machines can significantly impact running costs. Test your script on the Basic machine first, as other options are more expensive.
 
-### Switching off the machine
+!!! warning
+    Choose the Use custom Virtual Machine profile only when absolutely necessary, use Basic machine unless a script requires high memory or increased CPU capacity. Excess use of higher-spec machines can significantly impact running costs. Test your script on the Basic machine first, as other options are more expensive.
+
+## Switching off the machine
 
 Your virtual machine will keep running for 24 hours if you are doing nothing. You can disconnect from Chrome, turn your laptop off, and then you will be straight back into the exact same machine when you connect again (within 24h). If you have Linux jobs running, the machine will keep going while these run (however long) plus another 48h.  
-**Warning:** Keeping machines running in the background costs money. So please actively shutdown (if you do not need the extra 48h) using the little off button on the bottom of the side menu.
+!!! warning
+    Keeping machines running in the background costs money. So please actively shutdown (if you do not need the extra 48h) using the "Off" button on the bottom of the side menu.
 
 ## GWAS Training Video
 
