@@ -33,7 +33,9 @@ This [reference page](#folder-structures) goes through the other folders and exp
 
 #### The `library-red` bucket
 
-Available at `library-red` \[give full path\] in your sandbox, this is a read-only folder that is shared between all users. It contains the data you need for your analyses. **library-red** is slower storage of large capacity (\>8 PiB as of February). For large files, the entire file must be read and cached first by gcsfuse; direct file seeking to a specific part of the file is not possible.  For high-performance or large files, it may be better to make a copy to **red** or **home/ivm**. **library-red** corresponds to the Google Storage bucket **gs://qmul-sandbox-production-library-red/** (read-write access only for admins). **library-red** stores curated and raw data necessary for your analysis. This is where you will find the data you need to run your analysis. It includes several subfolders, each designated for specific data types and purposes. If you find a folder without a `readme` file, please contact the Genes and Health team for more information on its intended use.
+Available at `library-red` \[give full path\] in your sandbox, this is a read-only folder that is shared between all users. It contains the data you need for your analyses. **library-red** is slower storage of large capacity (\>8 PiB as of February). For large files, the entire file must be read and cached first by gcsfuse; direct file seeking to a specific part of the file is not possible.  
+
+For high-performance or large files, it may be better to make a copy to **red** or **home/ivm**. **library-red** corresponds to the Google Storage bucket **gs://qmul-sandbox-production-library-red/** (read-write access only for admins). **library-red** stores curated and raw data necessary for your analysis. This is where you will find the data you need to run your analysis. It includes several subfolders, each designated for specific data types and purposes. If you find a folder without a `readme` file, please contact the Genes and Health team for more information on its intended use.
 
 #### The `green` bucket
 
@@ -57,14 +59,14 @@ TRE user have two data storage resources available to them: i) their virtual mac
 2. Copying data from `/home/ivm` to `red`
 3. Deleting data from `red`
 
-User may also wish to move/copy/rename/delete files within 
+!!! note
+    Users may also wish to move/copy/rename/delete files and directories within `/home/ivm/` however, as prevously stated `home` behaves as a standard unix/linux filesystem and therefore standard unix `mv`, `cp`, `rm`, `rmdir` commands can be used for file manipulation.  
 
-In this section we explain what G&H buckets are and the 3 methods for managing data on the G&H TRE’s red bucket. The three ways to manipulate folders and files in the red bucket are:
+The three ways to manipulate folders and files in the red bucket are:
 
 1. using the “Upload to red bucket” option in the File Manager,  
 2. using the gcloud command line interface,  
 3. mounting your red folder into your virtual machine.
-
 
 ### Copying data to red
 
