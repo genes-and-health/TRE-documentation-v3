@@ -1,6 +1,31 @@
 # Folder and bucket structure
 
-Folders are suffixed with red or green to indicate the type of data that is stored there. Red is for potentially sensitive data that should not be shared outside. Green is for data that can be shared with the outside world. When you log into your sandboxes, you will have a number of folders available for you. To get started, we will concentrate on the **library-red**, **red**, and **home** folders.
+Folders are suffixed with red or green to indicate the type of data that is stored there. Red is for potentially sensitive data that should not be shared outside. Green is for data that can be shared with the outside world. When you log into your sandboxes, you will have a number of folders available for you. To get started, we will concentrate on the **library-red**, **red**, and **home** folders but before we do so, we need to understand Google Cloud Storage (GCS) buckets and how Genes & Health uses these.
+
+## G&H and Google Cloud Storage (GCS) buckets
+
+### Understanding Google Cloud Storage (GCS) buckets
+
+Genes & Health TRE data are stored in Google Cloud Storage (GCS) buckets (on a server located in London, UK). Buckets are the basic data container for GCS and everything stored in GCS must be contained in a bucket. Each of the usual G&H TRE top level storage domains are separate GCS buckets, for example, `library-red`, `red`, `green` and `exomes-library-red`. Files in a G&H TRE bucket are just that. The bucket contains a collection of files.
+
+### GCS buckets and directories**
+
+The concept of a physical directory does not rightly exist in GCS. Rather, directories are “simulated” by GCS from the files name. This can be illustrated as follows:  
+
+![](images/sandboxes-and-folder-structures/bucket-structure.png)
+
+In the image above, the filenames are “A/Obj1.txt”, “A/Obj2.txt”, “B/Obj3.txt”, “B/D/Obj3.txt” and “B/D/Obj4.txt” and the files simply exists a files in the bucket with those filenames. Bucket folders ‘A/’ and ‘B/’ and the sub-folder ‘D/’ are simulated. This means that is you were to delete “A/Obj1.txt” and “A/Obj2.txt”, the simulated folder “A/” would disappear (there would no longer be filenames justifying its existence). However, if you were to delete file “B/Obj3.txt”, both simulated folder ‘B/’ and sub-folder ‘D/’ would remains as they would be accounted for by filenames “B/D/Obj3.txt” and “B/D/Obj4.txt”. In the rest of this guide, when we refer to (GCS) directories, we refer to such simulated directories.
+
+### G&H GCS Bucket URLs
+
+G&H buckets can be identified 
+
+On the TRE, /red/ “lives” on the file system (/genesandhealth/red/) as shown below:  
+![](images/sandboxes-and-folder-structures/file-manager-red.png)
+
+Physically though, as the /red/ bucket is stored on a Google Cloud file server, it has a Uniform Resource Locator (URL). The URL will depend on the sandbox you use.  
+For sandbox-1, the URL is gs://qmul-production-sandbox-1-red/ and, predictably, you need to change the number in the URL to match your sandbox number. When moving things to and from the red bucket using either gcloud (Option 2\) or file mounting (Option 3), you will need to use the URL.
+
 
 This [reference page](#folder-structures) goes through the other folders and explains what they are for and how they should be used. The following is a high-level overview of the directories in the TRE:  
 
@@ -18,28 +43,7 @@ In this section we explain what G&H buckets are and the 3 methods for managing d
 2. using the gcloud command line interface,  
 3. mounting your red folder into your virtual machine.
 
-### Understanding G&H Buckets
-
-#### **G&H and Google Cloud Storage (GCS) Buckets**
-
-Genes & Health TRE data are stored in Google Cloud Storage (GCS) buckets (on a server located in London, UK). Buckets are the basic data container for GCS and everything stored in GCS must be contained in a bucket. Each of the usual G&H TRE top level storage domains are separate GCS buckets, for example, library-red, red, green and exomes-library-red. The red bucket is for TRE users to store scripts and data safely (with versioning back-up) and to permit the sharing of these between project collaborators. Files in a G&H TRE bucket are just that. The bucket contains a collection of files.
-
-#### **GCS Buckets and Directories**
-
-The concept of a physical directory does not rightly exist in GCS. Rather, directories are “simulated” by GCS from the files name. This can be illustrated as follows:  
-
-![](images/sandboxes-and-folder-structures/bucket-structure.png)
-
-
-In the image above, the filenames are “A/Obj1.txt”, “A/Obj2.txt”, “B/Obj3.txt”, “B/D/Obj3.txt” and “B/D/Obj4.txt” and the files simply exists a files in the bucket with those filenames. Bucket folders ‘A/’ and ‘B/’ and the sub-folder ‘D/’ are simulated. This means that is you were to delete “A/Obj1.txt” and “A/Obj2.txt”, the simulated folder “A/” would disappear (there would no longer be filenames justifying its existence). However, if you were to delete file “B/Obj3.txt”, both simulated folder ‘B/’ and sub-folder ‘D/’ would remains as they would be accounted for by filenames “B/D/Obj3.txt” and “B/D/Obj4.txt”. In the rest of this guide, when we refer to (GCS) directories, we refer to such simulated directories.
-
-#### **G&H GCS Bucket URLs**
-
-On the TRE, /red/ “lives” on the file system (/genesandhealth/red/) as shown below:  
-![](images/sandboxes-and-folder-structures/file-manager-red.png)
-
-Physically though, as the /red/ bucket is stored on a Google Cloud file server, it has a Uniform Resource Locator (URL). The URL will depend on the sandbox you use.  
-For sandbox-1, the URL is gs://qmul-production-sandbox-1-red/ and, predictably, you need to change the number in the URL to match your sandbox number. When moving things to and from the red bucket using either gcloud (Option 2\) or file mounting (Option 3), you will need to use the URL.
+The red bucket is for TRE users to store scripts and data safely (with versioning back-up) and to permit the sharing of these between project collaborators. 
 
 ### Copying data to red
 
