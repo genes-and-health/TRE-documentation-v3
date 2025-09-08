@@ -12,5 +12,5 @@ That is, researchers must enter the secure environment of a TRE to work on the d
 
 In our case, many NHS Providers will not supply clinical data (including sensitive personal data) for GnH participants unless GnH can house it in an ISO27001-certified TRE.
 
-
+![](images/tre/British_Assessment_Bureau_ISO_27001_RGB_White_badge.png){ width="250" }
 
