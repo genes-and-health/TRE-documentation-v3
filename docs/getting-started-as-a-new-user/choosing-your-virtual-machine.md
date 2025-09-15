@@ -23,5 +23,5 @@ Your virtual machine will keep running for 24 hours if you are doing nothing. Yo
 !!! warning
     Keeping machines running in the background costs money. So please actively shutdown (if you do not need the extra 48h) using the "Off" button on the bottom of the side menu or the `Shut down` option in the `Applications` menu.
 
-![The 'Off' button](/docs/images/getting-started-as-a-new-user/tre-off-button.png)
+![The 'Off' button](/docs/images/getting-started-as-a-new-user/the-off-button.png)
 ![The 'Shut down' option](/docs/images/getting-started-as-a-new-user/the-shutdown-option.png)
