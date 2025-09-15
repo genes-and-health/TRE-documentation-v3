@@ -58,6 +58,15 @@ markdown_extensions:
 nav:
   - What is a TRE ?: what-is-a-tre.md
   - Getting started as a new user: getting-started-as-a-new-user.md
+      - Getting access and setting up a profile: getting-started-as-a-new-user/steps-to-get-access.md
+      - Starting the TRE: getting-started-as-a-new-user/starting-the-tre.md
+      - Choosing your required virtual machine configuration: getting-started-as-a-new-user/choosing-your-virtual-machine.md
+  - Using the TRE: 
+      - Running a GWAS: using-the-tre/running-a-gwas.md
+      - Understanding TRE folders and buckets: using-the-tre/folder-and-bucket-strcuture.md
+  - Getting data in and out of the TRE: 
+      - How to get your data in: getting-data-in-and-out-of-the-TRE/how-to-get-your-data-in.md
+      - Requesting data out of the TRE: getting-data-in-and-out-of-the-TRE/requesting-data-out-of-the-TRE.md
   - Latest TRE data updates and changes: latest-tre-data-updates-and-changes.md
 #  - Trusted Research Environment (TRE): heading=h.vhgcd46bp2tb.md
   - Sandboxes and what each sandbox can access: sandboxes-and-what-each-sandbox-can-access.md
@@ -109,9 +118,6 @@ nav:
 #  - Developer requests: developer-requests.md
   - How to use docker: how-to-use-docker.md
   - How to write hash symbols: how-to-write-hash-symbols.md
-  - Getting data in and out of the TRE: 
-      - How to get your data in: getting-data-in-and-out-of-the-TRE/how-to-get-your-data-in.md
-      - Requesting data out of the TRE: getting-data-in-and-out-of-the-TRE/requesting-data-out-of-the-TRE.md
   # - Copying text in: copying-text-in.md
   # - Getting user data into the TRE: getting-user-data-into-the-tre.md
   - How to increase disk size​: how-to-increase-disk-size.md
