@@ -56,7 +56,6 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - md_in_html
 nav:
-  - How to update this documentation: how-to-update-this-documentation.md
   - What is a TRE ?: what-is-a-tre.md
   - Getting started as a new user: getting-started-as-a-new-user.md
   - Latest TRE data updates and changes: latest-tre-data-updates-and-changes.md
@@ -149,3 +148,4 @@ nav:
   - Module Manager User Guide: module-manager-guide.md
   - How to get Help: how-to-get-help.md
 #  - MkDocs Hosting Options: mkdocs-hosting-options.md
+  - How to update this documentation: how-to-update-this-documentation.md
