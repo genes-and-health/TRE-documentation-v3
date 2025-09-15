@@ -9,7 +9,7 @@
 Users with an academic email address (.ac.uk) or an NHS email address (@nhs.net) can register for the NHS Data Security Awareness Level 1 training at [e-learning for Healthcare](https://portal.e-lfh.org.uk/Component/Details/544034).  
 !!! note "Wellcome Sanger Institute employees"  
 	If you're a [Wellcome Sanger Institute](https://www.sanger.ac.uk/) employee, please use ODS Code **8J947** and select **Genome Research Limited** from the list of organisations when you register for the course.  
-Non-academic users can register and pay (about £30) for the training course at [eIntegrity Healthcare e-learning](https://www.eintegrity.org/healthcare-course/data-security-awareness-from-smc/).  
+Non-academic users can register and pay (about £30) for the training course at [eIntegrity Healthcare e-learning](https://www.eintegrity.org/healthcare-course/data-security-awareness-from-smc/). Genes & Health industry consortium users can request a pre-paid link to eIntegrity from us.
 
 After completing the NHS Data Security Awareness Level 1 training course, all users must attest to the [Genes & Health Code of Conduct](https://e4c14f23.tre-documentation.pages.dev/assets/files/TRE_User_Code_of_Conduct_5.0-4fb0174879dd67ccf5dc610fd014d9c2.pdf) and upload their certificate to Genes & Health new user registration system. Please contact Genes and Health at genesandhealth@qmul.ac.uk for instructions on how to access the new user registration system.  
 
