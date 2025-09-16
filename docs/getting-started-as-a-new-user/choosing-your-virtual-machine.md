@@ -1,7 +1,7 @@
 # Choosing your required virtual machine (VM) configuration
 
 Once logged in, you will be taken to the **Virtual Machines** (VM) page where you can start a new machine or connect to an existing one.  
-![Virtual Machine options](/docs/images/getting-started-as-a-new-user/virtual-machine-options.png)
+![Virtual Machine options](../images/getting-started-as-a-new-user/virtual-machine-options.png)
 You will be offered a variety of virtual machine types.  
 !!! warning
     Choose the Basic machine unless a script requires high memory or increased CPU capacity, and is ready to go. Test your script on the Basic machine first, as other options are more expensive.  
@@ -12,7 +12,7 @@ You will be offered a variety of virtual machine types.
 ## Choosing a custom machine configuration
 
 It is possible you may require a Virtual Machine that offers resources different to the standard flavors i.e. higher-memory, higher-cpu or memory-optimised instances. You can choose a custom VM configuration from the **Virtual Machines** page by expanding the **Use custom Virtual Machine profile** section at the bottom.  
-![Custom Virtual Machine profile](/docs/images/getting-started-as-a-new-user/custom-virtual-machine-profile.png)
+![Custom Virtual Machine profile](../images/getting-started-as-a-new-user/custom-virtual-machine-profile.png)
 
 !!! warning
     Choose the Use custom Virtual Machine profile only when absolutely necessary, use Basic machine unless a script requires high memory or increased CPU capacity. Excess use of higher-spec machines can significantly impact running costs. Test your script on the Basic machine first, as other options are more expensive.
@@ -23,5 +23,5 @@ Your virtual machine will keep running for 24 hours if you are doing nothing. Yo
 !!! warning
     Keeping machines running in the background costs money. So please actively shutdown (if you do not need the extra 48h) using the "Off" button on the bottom of the side menu or the `Shut down` option in the `Applications` menu.
 
-![The 'Off' button](/docs/images/getting-started-as-a-new-user/the-off-button.png)
-![The 'Shut down' option](/docs/images/getting-started-as-a-new-user/the-shutdown-option.png)
+![The 'Off' button](../images/getting-started-as-a-new-user/the-off-button.png)
+![The 'Shut down' option](../images/getting-started-as-a-new-user/the-shutdown-option.png)
