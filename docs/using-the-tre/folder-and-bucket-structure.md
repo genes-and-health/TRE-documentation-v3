@@ -1,6 +1,6 @@
 # Folder and bucket structure
 
-To get started, we will concentrate on the `library-red`, `red`, and `home` folders but before we do so, we need to understand **Google Cloud Storage (GCS) buckets** and how Genes & Health uses these.
+To undertand how Genes & Health data are stored and how to use the data resources, we need to understand **Google Cloud Storage (GCS) buckets**.  GCS buckets are used for all data storage in the TRE with the exception of user data in the `home` directory.
 
 !!! note "`home` directory"
     The `home` directory is associated with the Gene & Health virtual machines rather than GCS --so it is (and behaves as) a standard unix directory.  The information regarding GCS buckets and the associated `library-red`, `red`, `green` directories does not apply.  Files and directories in `home` are created, manipulated and deleted as in unix/linux.  The `home` directory is persistent --when you close a virtual machine, the home direcotry will not be deleted and will present the same way next time you spin a new virtual machine.  Although the `home` directory is persistent, its use is recommended for development purposes only and we advise ensuring critical code and data are regularly copied to the `red` folder.
@@ -32,6 +32,8 @@ This [reference page](#folder-structures) goes through the other folders and exp
 ![](images/sandboxes-and-folder-structures/sandbox-diagram.png)
 
 Folders are suffixed with red or green to indicate the type of data that is stored there. Red is for potentially sensitive data that should not be shared outside. Green is for data that can be shared with the outside world. When you log into your sandboxes, you will have a number of folders available for you. 
+To get started, we will concentrate on the `library-red`, `red`, and `home` folders but before we do so, we
+
 
 #### The `library-red` bucket
 
