@@ -3,29 +3,51 @@
 To undertand how Genes & Health data are stored and how to use the data resources, we need to understand **Google Cloud Storage (GCS) buckets**.  GCS buckets are used for all data storage in the TRE with the exception of user data in the `home` directory.
 
 !!! note "`home` directory"
-    The `home` directory is associated with the Gene & Health virtual machines rather than GCS --so it is (and behaves as) a standard unix directory.  The information regarding GCS buckets and the associated `library-red`, `red`, `green` directories does not apply.  Files and directories in `home` are created, manipulated and deleted as in unix/linux.
-    !!! success
-    The `home` directory is persistent --when you close a virtual machine, the home direcotry will not be deleted and will present the same way next time you spin a new virtual machine.  Although the `home` directory is persistent, its use is recommended for development purposes only and we advise ensuring critical code and data are regularly copied to the `red` folder.
+    The `home` directory is associated with the Gene & Health virtual machines rather than GCS --so it is (and behaves as) a standard unix directory.  Files and directories in `home` are created, manipulated and deleted as in Unix/Linux.  Strictly speaking, your `home` directory is a sub-directory of `home`: `/home/ivm` --you have read/write access to `/home/ivm` but read only to `/home`
+    !!! success "`home` directory persistence"
+    The `home` directory is persistent --when you close a virtual machine, the home direcotry will not be deleted and will present the same way next time you spin a new virtual machine --regardless of the configuration of the new VM.  Although the `home` directory is persistent, its use is recommended only for development purposes; we advise ensuring critical code and data are regularly copied to the `red` folder.
 
-## G&H and Google Cloud Storage (GCS) buckets
+## Understanding Google Cloud Storage (GCS) buckets
 
-### Understanding Google Cloud Storage (GCS) buckets
+Genes & Health TRE data are stored in Google Cloud Storage (GCS) buckets (on a server located in London, UK). Buckets are the basic data container for GCS and everything stored in GCS must be contained in a bucket.
 
-Genes & Health TRE data are stored in Google Cloud Storage (GCS) buckets (on a server located in London, UK). Buckets are the basic data container for GCS and everything stored in GCS must be contained in a bucket. Each of the usual G&H TRE top level storage domains are separate GCS buckets, for example, `library-red`, `red`, `green` and `exomes-library-red`. Files in a G&H TRE bucket are just that. The bucket contains a collection of files.
+Each of the G&H TRE top level storage domains are separate GCS buckets, for example, `library-red`, `red`, `green` and `exomes-library-red`. Files in a G&H TRE bucket are just that. The bucket contains a collection of files.
 
-#### GCS buckets and directories
+### GCS buckets and directories
 
 The concept of a physical directory does not rightly exist in GCS. Rather, directories are “simulated” by GCS from the files name. This can be illustrated as follows:  
 
-![](../images/using-the-tre/bucket-structure.png)
+![the GCS bucket structure](../images/using-the-tre/bucket-structure.png)
 
-In the image above, the filenames are “A/Obj1.txt”, “A/Obj2.txt”, “B/Obj3.txt”, “B/D/Obj3.txt” and “B/D/Obj4.txt” and the files simply exists a files in the bucket with those filenames. Bucket folders ‘A/’ and ‘B/’ and the sub-folder ‘D/’ are simulated. This means that is you were to delete “A/Obj1.txt” and “A/Obj2.txt”, the simulated folder “A/” would disappear (there would no longer be filenames justifying its existence). However, if you were to delete file “B/Obj3.txt”, both simulated folder ‘B/’ and sub-folder ‘D/’ would remains as they would be accounted for by filenames “B/D/Obj3.txt” and “B/D/Obj4.txt”. In the rest of this guide, when we refer to (GCS) directories, we refer to such simulated directories other then when referring the the `home` directory.
+In the image above, the filenames are `A/Obj1.txt`, `A/Obj2.txt`, `B/Obj3.txt`, `B/D/Obj3.txt` and `B/D/Obj4.txt` and the files simply exists a files in the bucket with those filenames. Bucket folders `A/`, `B/` its sub-folder `D/` are simulated. This means that if you were to delete `A/Obj1.txt` and `A/Obj2.txt`, the simulated folder `A/` would disappear (there would no longer be any files justifying its existence). However, if you were to delete file `B/Obj3.txt`, both simulated folder `B/` its sub-folder `D/` would remains as they would be accounted for by filenames `B/D/Obj3.txt` and `B/D/Obj4.txt`.
 
-### G&H GCS Buckets
+If you were to delete all the .txt files in the bucket, all of the directories would disappear but the bucket would remain in existance.
 
-G&H buckets can be identified into two way within the TRE --depending on the file operation you may need to use one method of identifying the bucket or the other:
+## G&H's `root` directory (`/`)
+
+The G&H data buckets reside in the `genesandhealth` folder of the VM's root directory (`/`).  The `home` directory also resides within the VM's root directory.  
+
+!!! warning
+    Other directories under the VM's root directory are system, software and VM related folders and not of use to TRE users.
+
+![the TRE root directrory](../images/using-the-tre/the-tre-root-directory-with-highlights.png)
+
+## G&H data buckets
+
+G&H data buckets can be found in the `/genesandhealth` directory.  Depending on your sandbox, you will see different buckets (essentially behaving as directories) in your `/genesandhealth` directory 
+
+G&H buckets are named `red` and `green` or suffixed with `-red` or `-green` to indicate the type of data stored in them: `red` is for potentially sensitive data that **should not be shared outside your sandbox**; `green` is for data that can be shared with the outside world. When you log into your sandbox, your VM will have a number of buckets available for you.  Here are some of the buckets (top level "directories") in the G&H sandbox-1 TRE:
+
+![the sandbox-1 genesandhealth directory](../images/using-the-tre/the-genesandhealth-directory.png)
+
+There are two fundametal buckets in the G&E TRE: `library-red` and `red`.
+
+
+### Identifying G&H GCS buckets
+
+G&H buckets can be identified into two way within the TRE --depending on the file operation you may need to use one or the other method of identifying the bucket:
 1. As a path on the virtual machine (e.g. (`/genesandhealth/red/`)
-2. As stored data within the Google Cloud Storage system identified by a Uniform Rseource Locator (URL), for example `gs://qmul-production-sandbox-1-red/`
+2. As a Google Cloud Storage bucket identified by a Uniform Rseource Locator (URL), for example `gs://qmul-production-sandbox-1-red/` identifies the `red` bucket on sanddox-1.
 
 The bucket's URL will depend on the sandbox you use.  
 
@@ -33,7 +55,7 @@ This [reference page](#folder-structures) goes through the other folders and exp
 
 ![](images/sandboxes-and-folder-structures/sandbox-diagram.png)
 
-Folders are suffixed with red or green to indicate the type of data that is stored there. Red is for potentially sensitive data that should not be shared outside. Green is for data that can be shared with the outside world. When you log into your sandboxes, you will have a number of folders available for you. 
+<!--Folders are suffixed with red or green to indicate the type of data that is stored there. Red is for potentially sensitive data that should not be shared outside. Green is for data that can be shared with the outside world. When you log into your sandboxes, you will have a number of folders available for you. -->
 To get started, we will concentrate on the `library-red`, `red`, and `home` folders but before we do so, we
 
 
