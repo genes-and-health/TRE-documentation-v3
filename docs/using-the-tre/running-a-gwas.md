@@ -11,7 +11,9 @@ Please feel free to [download the video](https://dl.dropboxusercontent.com/s/k6h
 You can find an example regenie script for binary trait GWAS below. Please feel free to adapt and reuse this script.
 
 !!! warning "Caution"
-    Please let your script run first on the cheap 2-core machine. Regenie has excellent multithreading capabilities and will perform best on the 64-core high-performance machine, but this option is expensive. The 2-core machine is sufficiently fast on a large multicore machine, allowing you to run it directly from the command line using a single all-chromosome pgen input file, without the need for HPC or splitting by chromosome. Regenie will utilise all available threads minus 1 by default, meaning the 64-core machine will run 63 times faster for the compute steps compared to the 2-core machine. It is fast enough on a large multicore machine to run several phenotypes. If you intend to run 1000 phenotypes, you will need to use Google HPC / WDL.
+    Please let your script run first on the cheap 2-core machine. Regenie has excellent multithreading capabilities and will perform best on the 64-core high-performance machine, but this option is expensive. The 2-core machine is sufficiently fast on a large multicore machine, allowing you to run it directly from the command line using a single all-chromosome pgen input file, without the need for HPC or splitting by chromosome.
+    
+    Regenie will utilise all available threads minus 1 by default, meaning the 64-core machine will run 63 times faster for the compute steps compared to the 2-core machine. It is fast enough on a large multicore machine to run several phenotypes. If you intend to run 1000 phenotypes, you will need to use Google HPC / WDL.
 
 ```bash
 
