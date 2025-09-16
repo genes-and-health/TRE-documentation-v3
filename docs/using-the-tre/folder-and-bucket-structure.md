@@ -34,50 +34,130 @@ The G&H data buckets reside in the `genesandhealth` folder of the VM's root dire
 
 ## G&H data buckets
 
-G&H data buckets can be found in the `/genesandhealth` directory.  Depending on your sandbox, you will see different buckets (essentially behaving as directories) in your `/genesandhealth` directory 
+G&H data buckets can be found in the `/genesandhealth` directory.  Depending on your sandbox, you will see different buckets (essentially behaving as directories) in your `/genesandhealth` directory
 
-G&H buckets are named `red` and `green` or suffixed with `-red` or `-green` to indicate the type of data stored in them: `red` is for potentially sensitive data that **should not be shared outside your sandbox**; `green` is for data that can be shared with the outside world. When you log into your sandbox, your VM will have a number of buckets available for you.  Here are some of the buckets (top level "directories") in the G&H sandbox-1 TRE:
+!!! info "Bucket nomenclature"
+    G&H buckets are named `red` and `green` or suffixed with `-red` or `-green` to indicate the type of data stored in them: `red` is for potentially sensitive data that **should not be shared outside your sandbox**; `green` is for data that can be shared with the outside world. 
+    
+When you log into your sandbox, your VM will have a number of buckets available for you.  Here are some of the buckets (top level "directories") in the G&H sandbox-1 TRE:
 
 ![the sandbox-1 genesandhealth directory](../images/using-the-tre/the-genesandhealth-directory.png)
-
-There are two fundametal buckets in the G&E TRE: `library-red` and `red`.
-
 
 ### Identifying G&H GCS buckets
 
 G&H buckets can be identified into two way within the TRE --depending on the file operation you may need to use one or the other method of identifying the bucket:
 1. As a path on the virtual machine (e.g. (`/genesandhealth/red/`)
-2. As a Google Cloud Storage bucket identified by a Uniform Rseource Locator (URL), for example `gs://qmul-production-sandbox-1-red/` identifies the `red` bucket on sanddox-1.
+2. As a Google Cloud Storage bucket identified by a Uniform Resource Locator (URL), for example `gs://qmul-production-sandbox-1-red/` identifies the `red` bucket on sanddox-1.
 
 The bucket's URL will depend on the sandbox you use.  
 
-This [reference page](#folder-structures) goes through the other folders and explains what they are for and how they should be used. The following is a high-level overview of the directories in the TRE:  
+## What's in the bucket?
 
-![](images/sandboxes-and-folder-structures/sandbox-diagram.png)
+The _fundamental_ storage resources in the TRE are:
+* the `library-red` and `red` buckets containing respectively the G&H -omics data and your sandbox's data
+* your `home` directory
 
-<!--Folders are suffixed with red or green to indicate the type of data that is stored there. Red is for potentially sensitive data that should not be shared outside. Green is for data that can be shared with the outside world. When you log into your sandboxes, you will have a number of folders available for you. -->
-To get started, we will concentrate on the `library-red`, `red`, and `home` folders but before we do so, we
+These exist alongside a number of other data resources as illustrated below.  Key data resources are then individually described.
 
+![a diagram showing TRE buckets and their relationships](../images/using-the-tre/sandbox-diagram.png){ width = 80% }
 
-#### The `library-red` bucket
+### Your `home` directory
 
-Available at `library-red` \[give full path\] in your sandbox, this is a read-only folder that is shared between all users. It contains the data you need for your analyses. **library-red** is slower storage of large capacity (\>8 PiB as of February). For large files, the entire file must be read and cached first by gcsfuse; direct file seeking to a specific part of the file is not possible.  
+Available at `/home/ivm` in your sandbox, this is your personal folder. This folder can be used to store any files you wish to keep for short duration in your working directories. `/home/ivm` is a semi-fast (HDD) storage and as such is faster than other parts of the sandbox. It might be worth running some jobs here, especially if you are loading large amounts of data.
 
-For high-performance or large files, it may be better to make a copy to **red** or **home/ivm**. **library-red** corresponds to the Google Storage bucket **gs://qmul-sandbox-production-library-red/** (read-write access only for admins). **library-red** stores curated and raw data necessary for your analysis. This is where you will find the data you need to run your analysis. It includes several subfolders, each designated for specific data types and purposes. If you find a folder without a `readme` file, please contact the Genes and Health team for more information on its intended use.
+This folder should not be treated as a permanent/long-term storage so anything you want to keep should be moved to the `red` folder. However, snapshots of the disk/folder are taken on daily basis and are retained for a period of 7-days. In-case you accidently delete some useful data from the `/home/ivm` folder, you can reach out to the TRE Admins to check if it is possible to recover the disk to a previous snapshot date within last 7 days.
 
-#### The `green` bucket
+This works as a standard Unix/Linux directory and is **not** a google GCS bucket. 
 
-PLACEHOLDER.
+### `(-)red` buckets 
+
+#### The `library-red` bucket \[read-only for users\]
+
+!!! info "Identifying `library-red`
+    * Specificity: common to all sandboxes
+    * VM directory: `/genesandhealth/library-red/`
+    * URL: `gs://qmul-sandbox-production-library-red/`
+
+This is a **read-only** folder that is common to all TRE users. `library-red` stores curated and raw data necessary for your analyses; it includes several subfolders, each designated for specific data types and purposes.  For technical reasons, the data subfolders are actually in `/genesandhealth/library-red/genesandhealth/`.  Folder names are (relatively) self-explanatory and all of them should contain a `README` type file explaining their content.  If you find a folder without a `README` file, please contact the Genes and Health team for more information on its intended use.
 
 #### The `red` bucket
 
-On the TRE, /red/ “lives” on the file system (/genesandhealth/red/) as shown below:  
-![](images/sandboxes-and-folder-structures/file-manager-red.png)
+!!! info "Identifying `red`
+    * specificity: sandbox specific
+    * VM directory: `/genesandhealth/red/`
+    * URL: `gs://qmul-production-sandbox-XX-red/` (replace `XX` with your sandbox number) 
 
-Physically though, as the /red/ bucket is stored on a Google Cloud file server, it has a Uniform Resource Locator (URL). The URL will depend on the sandbox you use.  
-For sandbox-1, the URL is gs://qmul-production-sandbox-1-red/ and, predictably, you need to change the number in the URL to match your sandbox number. When moving things to and from the red bucket using either gcloud (Option 2\) or file mounting (Option 3), you will need to use the URL.
+The `red` bucket is a read-write bucket for TRE users to store scripts and data safely (with versioning back-up) and to permit the sharing of these between project collaborators. It is the only GCS bucket **directly** accessible to non-admin TRE users.  You are advised to create your own subfolder in `red`; user folders are typically created as FirstnameLastname (so `/genesandhealth/red/StuartRison/`) although some iconoclasts have broken this convention.
 
-The `red` bucket is a read-write bucket for TRE users to store scripts and data safely (with versioning back-up) and to permit the sharing of these between project collaborators. It is the only GCS bucket **directly** accessible to non-admin TRE users. 
+!!! info "Using the red bucket"
+    The `red` directory is a GCS bucket so you cannot simply copy or create files into it using standard unix/linux commands.  You either need to use the "Upload to red bucket" option in the TRE's GUI file manager or the `gcloud storage` suite of command line interface commands.  This is explained in the TBC (how-to-use-the-red-bucket) section.
+
+!!! danger "With great power..."
+    comes great responsability".  The `red` bucket is shared between all sandbox users **--even if you have created your own sub-directory**.  This means that you can:
+    * See all other sandbox users' files (and all other sandbox users can see your files)
+    * Move/rename/delete **any** sandbox users' files 
+    <p>
+    Exercise great caution when moving or deleting files in the `red` bucket.
+
+#### The `consortiumpriorityperiod-library-red` bucket
+
+!!! info "Identifying `consortiumpriorityperiod-library-red`
+    * specificity: restricted sandboxes
+    * VM directory: `/genesandhealth/consortiumpriorityperiod-library-red/`
+    * URL: `gs://qmul-sandbox-production-library-consortiumpriorityperiod-red` 
+
+This bucket is only available to the core Genes & Health team, and to companies in the Genes & Health Industry Consortium. It contains data restricted during 9 month priority access periods (e.g. exome sequencing). Specifically, read access is only for sandboxes 1, 3, 4, 5, 6, 7, 9, 10, 13.
+
+Same storage type as /genesandhealth/library-red, see comments above
+
+### `(-)green` buckets
+
+#### The `green` bucket \[read-only for users\]
+
+!!! info "Identifying `green`
+    * Specificity: sandbox specific
+    * VM directory: `/genesandhealth/green/`
+    * URL: `gs://fg-qmul-production-sandbox-XX\_green/` (replace `XX` with your sandbox number) 
+
+`green` can be read by other users in the sandbox. Users cannot write to `green`.  Users can download from `/genesandhealth/green` from internet/external systems.
+
+The admin team will review data-out requests, and either place the data in `green` (for specific users to download, short term) or `library-green` (long term availability for all users to download).
+
+!!! warning "Data in `green`
+    Data in each sandbox's `green` will be deleted approximately 1 week after creation. `green` is not intended for long term storage, only data transfer/download.
+
+#### The `consortiumpriorityperiod-library-green` bucket
+
+!!! info "Identifying `consortiumpriorityperiod-library-green`
+    * Specificity: restricted sandboxes
+    * VM directory: `/genesandhealth/consortiumpriorityperiod-library-green/`
+    * URL: `gs://qmul-sandbox-production-library-consortiumpriorityperiod-green`
+    
+Access as for `consortiumpriorityperiod-library-red` but with external download enabled. Used for results. **Not for individual level data**.
+
+### Other folders
+
+#### `shared`
+
+You can 'publish' a file to `/genesandhealth/shared` by right clicking on it, and selected 'Share with all users'
+
+`/genesandhealth/shared` is available to all other users within the TRE.
+
+#### `pipelines`
+
+This is the output of the high performance compute WDL Pipelines, that the ivm/pipeline writes to. Users of the sandbox have read only access.
+
+Specific to each sandbox.
+
+This is slower storage of large capacity (\>8 PiB @ Feb 2022\)
+
+#### Public datasets bucket
+
+We also maintain a bucket for public datasets. This is not visible from within the TRE. Much of the data is mirrored in `/genesandhealth/library-green/` within the TRE.
+
+```
+gs://genesandhealth\_publicdatasets/
+```
 
 ## Moving TRE data
 
@@ -128,51 +208,10 @@ Same storage type as **/genesandhealth/library-red**, see comments above
 
 #### **green**
 
-Specific to each sandbox.
 
-green can be read by other users in the sandbox. Users cannot write to green.
 
-Users can download from **/genesandhealth/green** from internet/external systems.
 
-The admin team will review data out requests, and either place the data in green (for specific users to download, short term) or **library-green** (long term availability for all users to download).
 
-**Data in each sandbox green will be deleted approx 1 week after creation. green is not intended for long term storage, only data transfer/download.**
-
-Same storage type as **/genesandhealth/library-red**, see comments above.
-
-**/genesandhealth/green** is a google bucket **gs://fg-qmul-production-sandbox-1\_green/** (read only for users, read+write only for admins) (replace the 1 with whichever sandbox you want)
-
-#### **consortiumpriorityperiod-library-green**
-
-Access as for **consortiumpriorityperiod-library-red** but with external download (e.g. gsutil) enabled. Used for results. Not for individual level data.
-
-```
-gs://qmul-sandbox-production-library-consortiumpriorityperiod-green
-```
-
-### Other folders
-
-#### **shared**
-
-You can 'publish' a file to /genesandhealth/shared by right clicking on it, and selected 'Share with all users'
-
-/genesandhealth/shared is available to all other users within the TRE.
-
-#### **pipelines**
-
-This is the output of the high performance compute WDL Pipelines, that the ivm/pipeline writes to. Users of the sandbox have read only access.
-
-Specific to each sandbox.
-
-This is slower storage of large capacity (\>8 PiB @ Feb 2022\)
-
-#### **Public datasets bucket**
-
-We also maintain a bucket for public datasets. This is not visible from within the TRE. Much of the data is mirrored in genesandhealth/library-green/ within the TRE.
-
-```
-gs://genesandhealth\_publicdatasets/
-```
 
 ### Copying between Google Buckets within the TRE
 
