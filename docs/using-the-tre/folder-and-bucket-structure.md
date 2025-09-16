@@ -1,6 +1,6 @@
 # Folder and bucket structure
 
-Folders are suffixed with red or green to indicate the type of data that is stored there. Red is for potentially sensitive data that should not be shared outside. Green is for data that can be shared with the outside world. When you log into your sandboxes, you will have a number of folders available for you. To get started, we will concentrate on the `library-red`, `red`, and `home` folders but before we do so, we need to understand **Google Cloud Storage (GCS) buckets** and how Genes & Health uses these.
+To get started, we will concentrate on the `library-red`, `red`, and `home` folders but before we do so, we need to understand **Google Cloud Storage (GCS) buckets** and how Genes & Health uses these.
 
 !!! note "`home` directory"
     The `home` directory is associated with the Gene & Health virtual machines rather than GCS --so it is (and behaves as) a standard unix directory.  The information regarding GCS buckets and the associated `library-red`, `red`, `green` directories does not apply.  Files and directories in `home` are created, manipulated and deleted as in unix/linux.  The `home` directory is persistent --when you close a virtual machine, the home direcotry will not be deleted and will present the same way next time you spin a new virtual machine.  Although the `home` directory is persistent, its use is recommended for development purposes only and we advise ensuring critical code and data are regularly copied to the `red` folder.
@@ -15,9 +15,9 @@ Genes & Health TRE data are stored in Google Cloud Storage (GCS) buckets (on a s
 
 The concept of a physical directory does not rightly exist in GCS. Rather, directories are “simulated” by GCS from the files name. This can be illustrated as follows:  
 
-![](images/sandboxes-and-folder-structures/bucket-structure.png)
+![](../images/using-the-tre/bucket-structure.png)
 
-In the image above, the filenames are “A/Obj1.txt”, “A/Obj2.txt”, “B/Obj3.txt”, “B/D/Obj3.txt” and “B/D/Obj4.txt” and the files simply exists a files in the bucket with those filenames. Bucket folders ‘A/’ and ‘B/’ and the sub-folder ‘D/’ are simulated. This means that is you were to delete “A/Obj1.txt” and “A/Obj2.txt”, the simulated folder “A/” would disappear (there would no longer be filenames justifying its existence). However, if you were to delete file “B/Obj3.txt”, both simulated folder ‘B/’ and sub-folder ‘D/’ would remains as they would be accounted for by filenames “B/D/Obj3.txt” and “B/D/Obj4.txt”. In the rest of this guide, when we refer to (GCS) directories, we refer to such simulated directories.
+In the image above, the filenames are “A/Obj1.txt”, “A/Obj2.txt”, “B/Obj3.txt”, “B/D/Obj3.txt” and “B/D/Obj4.txt” and the files simply exists a files in the bucket with those filenames. Bucket folders ‘A/’ and ‘B/’ and the sub-folder ‘D/’ are simulated. This means that is you were to delete “A/Obj1.txt” and “A/Obj2.txt”, the simulated folder “A/” would disappear (there would no longer be filenames justifying its existence). However, if you were to delete file “B/Obj3.txt”, both simulated folder ‘B/’ and sub-folder ‘D/’ would remains as they would be accounted for by filenames “B/D/Obj3.txt” and “B/D/Obj4.txt”. In the rest of this guide, when we refer to (GCS) directories, we refer to such simulated directories other then when referring the the `home` directory.
 
 ### G&H GCS Buckets
 
@@ -30,6 +30,8 @@ The bucket's URL will depend on the sandbox you use.
 This [reference page](#folder-structures) goes through the other folders and explains what they are for and how they should be used. The following is a high-level overview of the directories in the TRE:  
 
 ![](images/sandboxes-and-folder-structures/sandbox-diagram.png)
+
+Folders are suffixed with red or green to indicate the type of data that is stored there. Red is for potentially sensitive data that should not be shared outside. Green is for data that can be shared with the outside world. When you log into your sandboxes, you will have a number of folders available for you. 
 
 #### The `library-red` bucket
 
