@@ -57,7 +57,7 @@ markdown_extensions:
   - md_in_html
 nav:
   - What is a TRE ?: what-is-a-tre.md
-  - Getting started as a new user: getting-started-as-a-new-user.md
+  - Getting started as a new user:
       - Getting access and setting up a profile: getting-started-as-a-new-user/steps-to-get-access.md
       - Starting the TRE: getting-started-as-a-new-user/starting-the-tre.md
       - Choosing your required virtual machine configuration: getting-started-as-a-new-user/choosing-your-virtual-machine.md
