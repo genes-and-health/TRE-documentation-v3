@@ -1,4 +1,6 @@
-# Steps to get access 
+# Getting access and setting up a profile
+
+## Steps to get access 
 
 * All users must read and accept the [Genes & Health Code of Conduct](https://e4c14f23.tre-documentation.pages.dev/assets/files/TRE_User_Code_of_Conduct_5.0-4fb0174879dd67ccf5dc610fd014d9c2.pdf).  
 * All users must complete the [NHS Data Security Awareness Level 1](https://www.e-lfh.org.uk/programmes/data-security-awareness/) training before they're granted access to Genes and Health data.
@@ -12,7 +14,7 @@ These steps are important for our  [NHS Digital Data Security and Protection Too
 !!! warning "Caution"  
 	Users who have not completed the Data Security Awareness training or attested to the Code of Conduct are subject to having their account deactivated.
 
-# Setting up a profile
+## Setting up a profile
 
 When first set up, users will get an email from Google (to their normal email address). This will have a username@genesandhealth.qmul.ac.uk username. You need to Add this as a Profile in Google Chrome. Please do not try to use any other browser than Google Chrome\!  
 !!! note
