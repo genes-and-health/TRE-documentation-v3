@@ -8,7 +8,7 @@ If you are new to the Genes & Health TRE, we recommend reading the following TRE
 2. [Getting data in and out of the TRE](getting-data-in-and-out-of-the-TRE)
 3. [How to get help](how-to-get-help.md)
 
-We **welcome** user-driven updates to the docs.  If you would like to contribute, please read the [How to update this documentation](how-to-update-this-documentation.md) section --please contact us to be added to our github documentation repository.
+We **welcome** user-driven updates to the docs.  If you would like to contribute, please read the [How to update this documentation](how-to-update-this-documentation.md) section and contact us to be added to our github documentation repository.
 
 <!--
 <div class="grid cards">
