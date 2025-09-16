@@ -2,8 +2,9 @@
 
 ## GWAS Training Video
 
-Genes & Health have provided a number of training videos to help researchers get started with the Trusted Research Environment (TRE). This is a 45-min tutorial in which GWAS using regenie is demonstrated (300Mb with mp4 format, updated 5 oct 2022). This video is a recording of a live demo session, and the quality may not be perfect. It is recommended to watch the video in full screen mode. Please feel free to download the video and watch it at your convenience.  
-[https://dl.dropboxusercontent.com/s/k6h5botp53xk3l6/TRE%20Training-20220928\_160450-Meeting%20Recording.mp4?e=1\&dl=0](https://dl.dropboxusercontent.com/s/k6h5botp53xk3l6/TRE%20Training-20220928_160450-Meeting%20Recording.mp4?e=1&dl=0)
+Genes & Health have provided a number of training videos to help researchers get started with the Trusted Research Environment (TRE). This is a 45-min tutorial in which GWAS using regenie is demonstrated (300Mb with mp4 format, updated 5 oct 2022). This video is a recording of a live demo session, and the quality may not be perfect. It is recommended to watch the video in full screen mode. 
+
+Please feel free to [download the video](https://dl.dropboxusercontent.com/s/k6h5botp53xk3l6/TRE%20Training-20220928\_160450-Meeting%20Recording.mp4?e=1\&dl=0) and watch it at your convenience.
 
 ### GWAS Example
 
