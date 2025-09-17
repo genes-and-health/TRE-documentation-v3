@@ -38,11 +38,11 @@ The only gcloud GROUP of relevance to the G&H TRE is the `storage` group.  `gclo
 ### Fundamental `gcloud storage` operations
 
 !!! info "Reminder"
-    You need to identify GCS buckets using their Uniform Resource Locator (URL), for example, the URL for the `red` bucket on sandbox-1 is: `gs://qmul-production-sandbox-1-red/`.  URL for G&H TRE buckets are given in the ["What's in the bucket"](./understanding-tre-folders-and-buckets#whats-in-the-bucket] or ["What's in the bucket V2"](./understanding-tre-folders-and-buckets.md#whats-in-the-bucket] sub-section of the ["Understanding TRE folders and buckets"](./understanding-tre-folders-and-buckets) section.
+    You need to identify GCS buckets using their Uniform Resource Locator (URL), for example, the URL for the `red` bucket on sandbox-1 is: `gs://qmul-production-sandbox-1-red/`.  URL for G&H TRE buckets are given in the ["What's in the bucket"](./understanding-tre-folders-and-buckets#whats-in-the-bucket) or ["What's in the bucket V2"](./understanding-tre-folders-and-buckets.md#whats-in-the-bucket) sub-section of the ["Understanding TRE folders and buckets"](./understanding-tre-folders-and-buckets) section.
 
 !!! warning "Warning"
     `gcloud storage` can replicate common linux file and directory handling commands.
-    <p>
+    
     * These commands are powerful, you could easily accidentally delete entire directories or rewrite files.
     * Do read the [`gcloud storage` documentation](https://cloud.google.com/sdk/gcloud/reference/storage).
     * Consider backing up data before uploading or downloading it to/from a google bucket
