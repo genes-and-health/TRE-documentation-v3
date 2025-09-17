@@ -244,9 +244,9 @@ You now have the (virtual) directory structure `/red/JoeBloggs/JB_data_dir/` in 
 
 This is only possible using `gcloud storage`.
 
-## Alternative to `gcloud storage`: 2. Mounting the red bucket onto your local drive
+## Alternative to `gcloud storage`: 2. Mounting the `red` bucket onto your VM
 
-The `red` directory is currently available to the G&H virtual machines as read-only and lacks some user permissions. The ability to upload files to a specific sub-directory, moving/editing files directly inside the red bucket, and creating a new directory inside red by using the terminal requires the use of the “tricks” described in Option 1 or the use of `gcloud storage` commands.  
+The `red` directory is currently available to the G&H virtual machines as read-only and lacks some user permissions. The ability to upload files to a specific sub-directory, moving/editing files directly inside the `red` bucket, and creating a new directory inside `red` by using a terminal requires the use of the “tricks” described in Option 1 or the use of `gcloud storage` commands.  
 
 Currently, there is no other GCS space available as read/write. There are on-going discussions with the developers of TRE to make the use of buckets easier for collaboration and sharing and this will hopefully be improved in the future.  
 As an alternative, you can mount a specific directory from `red` in your `home` directory.  
@@ -260,7 +260,7 @@ When you mount a GCS bucket directory onto virtual machine, you are essentially 
     * Any change you make to the locally mounted directory will be replicated (mirrored) in the GCS bucket.
     * Likewise, if you were to make changes directly in the GCS bucket, these would be replicated (mirrored) in the locally mounted directory.  
 
-### How to mount a red directory locally?
+### How to mount a `red` directory to your VM?
 
 Create a directory in your home directory with:  
 
