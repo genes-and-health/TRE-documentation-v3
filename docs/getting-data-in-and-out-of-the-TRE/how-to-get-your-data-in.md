@@ -4,7 +4,27 @@ Sometimes it is necessary to get data or code into the TRE. As the TRE is shut o
 
 A small amount of text can be pasted in from external systems using the Clipboard tool. This does not allow copy/paste out. This might be useful should you need to copy in a difficult to write function for example.
 
-## Getting user data into the TRE {#getting-user-data-into-the-tre}
+First select the horizontal chevron on the left-hand-side of the TRE:
+
+![TRE tools chevron](../images/getting-data-in-and-out-of-the-TRE/gnh_tre_tools_chevron.png)
+
+This will reveal the TRE tools:
+
+![TRE tools](../images/getting-data-in-and-out-of-the-TRE/tre-tools.png)
+
+Click on the "Clipboard" button:
+
+![Clipboard tool](../images/getting-data-in-and-out-of-the-TRE/clipboard-tool.png)
+
+Paste your **external** text/code/data (up to 10kB) into the text box using <kbd>Ctrl</kbd>-<kbd>V</kbd> (or Mac equivalent):
+
+![Clipboard tool with text](../images/getting-data-in-and-out-of-the-TRE/clipboard-tool-with-text.png)
+
+Go to a TRE terminal/text editor/application and paste in the external text using <kbd>Ctrl</kbd>-<kbd>V</kbd> (or Mac equivalent):
+
+![pasted text](../images/getting-data-in-and-out-of-the-TRE/text-pasted-in-text-editor.png)
+
+## Uploading user data into the TRE {#getting-user-data-into-the-tre}
 
 You can upload data to your Sandbox specific green-uploads bucket, which you can find using the table below:
 
@@ -29,4 +49,9 @@ You can upload data to your Sandbox specific green-uploads bucket, which you can
 
 Once uploaded, please email [hgi@sanger.ac.uk](mailto:hgi@sanger.ac.uk) with the names of the files/directories you'd like to be transferred and which Sandbox you like them to be transferred to.
 
-**Tip:** Please be aware at present, all users in your sandbox can see all data that is being stored in the green library. For this reason, it is important that you do not upload any data that you do not want other users to see, fo example, individual level data.
+!!! danger "Patient identifying data"
+    Please do not transfer any patient identifying data to the G&H TRE, for example data containing patient names, NHS numbers, dates of birth, etc. 
+
+!!! tip
+    Please be aware at present, all users in your sandbox can see all data that is being stored in the green library. For this reason, it is important that you do not upload any data that you do not want other users to see.
+
