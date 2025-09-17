@@ -61,9 +61,9 @@ nav:
       - Getting access and setting up a profile: getting-started-as-a-new-user/steps-to-get-access.md
       - Starting the TRE: getting-started-as-a-new-user/starting-the-tre.md
       - Choosing your required virtual machine configuration: getting-started-as-a-new-user/choosing-your-virtual-machine.md
-  - Using the TRE: 
-      - Running a GWAS: using-the-tre/running-a-gwas.md
+  - Using the TRE:
       - Understanding TRE folders and buckets: using-the-tre/folder-and-bucket-structure.md
+      - Running a GWAS: using-the-tre/running-a-gwas.md
   - Getting data in and out of the TRE: 
       - How to get your data in: getting-data-in-and-out-of-the-TRE/how-to-get-your-data-in.md
       - Requesting data out of the TRE: getting-data-in-and-out-of-the-TRE/requesting-data-out-of-the-TRE.md
