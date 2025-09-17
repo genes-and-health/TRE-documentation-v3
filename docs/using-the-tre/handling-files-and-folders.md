@@ -38,7 +38,7 @@ The only gcloud GROUP of relevance to the G&H TRE is the `storage` group.  `gclo
 ### Fundamental `gcloud storage` operations
 
 !!! info "Reminder"
-    You need to identify GCS buckets using their Uniform Resource Locator (URL), for example, the URL for the `red` bucket on sandbox-1 is: `gs://qmul-production-sandbox-1-red/`.  URL for G&H TRE buckets are given in the ["What's in the bucket"](./understanding-tre-folders-and-buckets#whats-in-the-bucket) or ["What's in the bucket V2"](./understanding-tre-folders-and-buckets.md#whats-in-the-bucket) sub-section of the ["Understanding TRE folders and buckets"](./understanding-tre-folders-and-buckets) section.
+    You need to identify GCS buckets using their Uniform Resource Locator (URL), for example, the URL for the `red` bucket on sandbox-1 is: `gs://qmul-production-sandbox-1-red/`.  URLs for G&H TRE buckets are given in the ["What's in the bucket?"](./understanding-tre-folders-and-buckets.md#whats-in-the-bucket) section.
 
 !!! warning "Warning"
     `gcloud storage` can replicate common linux file and directory handling commands.
@@ -164,109 +164,101 @@ gcloud storage mv gs://qmul-production-sandbox-1-red/JoeBloggs/old_name.txt gs:/
 \[Remember `old_name.txt` will be copied to `new_name.txt` and then `old_name.txt` will be deleted; if `old_name.txt` is very large, this may incur data charges.\]
 
 
-## Option 1: “Upload to red bucket” option in the File Manager
+## Alternative to `gcloud storage`: 1. the “Upload to red bucket” option in the File Manager
 
 ### Uploading a file to `red`
 To upload a file to `red` from another location (here my home folder on ivm), right click on the file and select “Upload to red bucket”.
-    
-![Image3](images/image3.png)
+
+![Image3](../images/using-the-tre/gcloud-storage-alternatives/image3.png)
 
 A new window should pop-up documenting the outcome, for example:
     
-![Image4](images/image4.png)
+![Image4](../images/using-the-tre/gcloud-storage-alternatives/image4.png)
 
 However, this will upload to file to the top directory in `red`.  This is not recommended.  Rather you should upload your files into your personal or project `red` directory.
 
-### Creating/uploading to a directory in red
-
-#### Creating a new directory in `red`
+### Creating a new directory in `red`
     
 If you want to create a new directory in `red`, you must upload one into it.  Remember that a GCS simulated directory can only exists if it is accounted for by a file.  If you try to upload an empty directory from a different location to `red`, you will get the following error:
     
-![Image5](images/image5.png)
+![Image5](../images/using-the-tre/gcloud-storage-alternatives/image5.png)
 
 Your directory must contain at least one file to be uploaded to the `red` bucket.
 
 To create a new directory in `red`, first create an identically named directory in /home/ivm/ using one of the two methods below:
 
+**Method 1:** Creating a new directory and file in File Manager
 
-#### Creating a new directory and file in File Manager
 To create a directory and file to upload to `red` in File Manager, right-click in empty space and select “Create New Folder”, then enter your folder name and click ‘OK’.
 
-![Image6](images/image6.png)
+![Image6](../images/using-the-tre/gcloud-storage-alternatives/image6.png)
 
 Now enter the new folder, right-click in empty space and select “Create Document / Empty File”
 
-![Image7](images/image7.png)
+![Image7](../images/using-the-tre/gcloud-storage-alternatives/image7.png)
 
 Give the file whatever name you want and click “Create”
 
-![Image8](images/image8.png)
+![Image8](../images/using-the-tre/gcloud-storage-alternatives/image8.png)
 
-You now have a folder called “JoeBloggs” which contains an (empty) file called “JB_dummy_file.txt”.
+You now have a folder called `JoeBloggs` which contains an (empty) file called `JB_dummy_file.txt`.
 
+**Method 2:** Creating a new directory and file in Terminal
 
-#### Creating a new directory and file in Terminal
-To create a new directory using the Terminal, first create a directory using the ‘mkdir’ command, enter the directory with the ‘cd’ command and create an empty file in this directory with the ‘touch’ command as illustrated below.
+To create a new directory using the Terminal, first create a directory using the `mkdir` command, enter the directory with the `cd` command and create an empty file in this directory with the `touch` command as illustrated below.
 
-![Image9](images/image9.png)
+![Image9](../images/using-the-tre/gcloud-storage-alternatives/image9.png)
 
 Using either of the methods above, you should end up with the following directory on /home/ivm/:
 
-![Image10](images/image10.png)
+![Image10](../images/using-the-tre/gcloud-storage-alternatives/image10.png)
 
-Now navigate back to the JoeBloggs directory, right-click on the directory icon and select “Upload to red bucket”.
+Now navigate back to the `JoeBloggs` directory, right-click on the directory icon and select “Upload to red bucket”.
 
-![Image11](images/image11.png)
+![Image11](../images/using-the-tre/gcloud-storage-alternatives/image11.png)
 
-The `red` bucket now contains a (virtual) directory called ‘JoeBloggs’ with the (empty) file ‘JB_dummy_file.txt’:
+The `red` bucket now contains a (virtual) directory called `JoeBloggs` with the (empty) file `JB_dummy_file.txt`:
 
-![Image12](images/image12.png)
+![Image12](../images/using-the-tre/gcloud-storage-alternatives/image12.png)
 
-> ⚠️ BE CAREFUL, if you delete all files in a `red` bucket directory, you will also delete the virtual directory.  In this case, if you right click JB_dummy_file.txt, the JoeBloggs directory will disappear.
+> ⚠️ BE CAREFUL, if you delete all files in a `red` bucket directory, you will also delete the virtual directory.  In this case, if you delete `JB_dummy_file.txt`, the `JoeBloggs` directory will disappear.
 
-#### Creating a sub-directory in the `red` bucket
+### Creating a sub-directory in the `red` bucket
 
-To create a sub-directory in the `red` bucket, you need to create an identical directory tree in /home/ivm/ (or another drive allowing this) and upload this to `red`.
+To create a sub-directory in the `red` bucket, you need to create an identical directory tree in `/home/ivm/` (or another drive allowing this) and upload this to `red`.
 For example, suppose we wanted to create a JoeBloggs sub-directory called ‘JB_data_dir’ we would do the following:
 
-![13](images/13.png)
+![Image13](../images/using-the-tre/gcloud-storage-alternatives/image13.png)
 
-And then navigate to the JoeBloggs directory in /home/ivm/ and right-click “Upload to red bucket”:
+And then navigate to the JoeBloggs directory in `/home/ivm/` and right-click “Upload to red bucket”:
 
-![14](images/14.png)
+![Image14](../images/using-the-tre/gcloud-storage-alternatives/image14.png)
 
+You now have the (virtual) directory structure `/red/JoeBloggs/JB_data_dir/` in `red` with the file `JB_data_dir_dummy.txt` in the directory.
 
-You now have the (virtual) directory structure /red/JoeBloggs/JB_data_dir/ in `red` with the file ‘JB_data_dir_dummy.txt’ in the directory.
+!!! info
+    * this will upload any new file or directory in the /home/ivm/JoeBloggs/ directory, for example, if you added “v_large_temp_file_that_should_definitely_not_be_moved.gz” in the /home/ivm/JoeBloggs/ directory, this will be uploaded to `red`
+    * the “Upload to red bucket” option will not replicate your /home/ivm/JoeBloggs/ directory to `red`, it will only upload new files or directories (as long as they contain at least one file) to the `red` bucket. For instance, if you delete `/home/ivm /JoeBloggs/JB_data_dir/` and then select “Upload to red bucket” for `/home/ivm /JoeBloggs/`, there will still be a `/red/JoeBloggs/JB_data_dir/` directory.
 
-> ⚠️ BE CAREFUL: 
-•	this will upload any new file or directory in the /home/ivm/JoeBloggs/ directory, for example, if you added “v_large_temp_file_that_should_definitely_not_be_moved.gz” in the /home/ivm/JoeBloggs/ directory, this will be uploaded to `red`
-•	the “Upload to red bucket” option will not replicate your /home/ivm/JoeBloggs/ directory to `red`, it will only upload new files or directories (as long as they contain at least one file) to the `red` bucket. I.e. if you delete /home/ivm /JoeBloggs/JB_data_dir/ and then select “Upload to red bucket” for /home/ivm /JoeBloggs/, there will still be a /red/ JoeBloggs/JB_data_dir/ directory.
+### Moving or renaming data in the `red` bucket
 
-##### Moving or renaming data in the `red` bucket
+This is only possible using `gcloud storage`.
 
-This is not possible.  It is probably easier to delete the data you want to move or rename within red and re-upload the data in a new location/with a new name as per the methods above.
-> ⚠️ BE CAREFUL:
-•	It is recommended you make sure you have a suitable copy of the data you are trying to move/rename before doing so!
-•	If you are moving large files, you may incur significant data charges
+## Alternative to `gcloud storage`: 2. Mounting the red bucket onto your local drive
 
----
+The `red` directory is currently available to the G&H virtual machines as read-only and lacks some user permissions. The ability to upload files to a specific sub-directory, moving/editing files directly inside the red bucket, and creating a new directory inside red by using the terminal requires the use of the “tricks” described in Option 1 or the use of `gcloud storage` commands.  
 
-
-## Option 3: Mounting the red bucket onto your local drive
-
-The red directory is currently available to the G&H virtual machines as read-only and lacks some user permissions. The ability to upload files to a specific sub-directory, moving/editing files directly inside the red bucket, and creating a new directory inside red by using the terminal requires the use of the “tricks” described in Option 1 or the use of gcloud storage commands.  
 Currently, there is no other GCS space available as read/write. There are on-going discussions with the developers of TRE to make the use of buckets easier for collaboration and sharing and this will hopefully be improved in the future.  
-As a temporary work-around, you can mount a specific directory from red in your home directory.  
+As an alternative, you can mount a specific directory from `red` in your `home` directory.  
 
 ### What is mounting?
 
-Mounting is a process by which a computer's (or in our case, a virtual machine’s) operating system makes files and directories on a storage device (such as hard drive, CD-ROM, or network share) available for users to access via the computer's file system.  
-When you mount a GCS bucket team or project directory onto your local drive, you are essentially creating a mirror of the GCS bucket. You can handle the locally created mirror (i.e. the mounted directory) as a “normal” linux directory.  
+Mounting is a process by which a computer's (or in our case, a virtual machine’s) operating system makes files and directories on a storage device (such as hard drive, CD-ROM, or network shared drive) available for users to access via the computer's file system.  
+When you mount a GCS bucket directory onto virtual machine, you are essentially creating a mirror of the GCS bucket. However, you can handle this locally created mirror (i.e. the mounted directory) as a “normal” linux directory.  
 
-> ⚠️ **BE CAREFUL:**  
-- Any change you make to the locally mounted directory will be replicated (mirrored) in the GCS bucket.  
-- Likewise, if you were to make changes directly in the GCS bucket, these would be replicated (mirrored) in the locally mounted directory.  
+!!! warning "Be careful..."  
+    * Any change you make to the locally mounted directory will be replicated (mirrored) in the GCS bucket.
+    * Likewise, if you were to make changes directly in the GCS bucket, these would be replicated (mirrored) in the locally mounted directory.  
 
 ### How to mount a red directory locally?
 
@@ -284,18 +276,17 @@ Run the following command to mount a shared team directory from red to `/home/iv
 gcsfuse --implicit-dirs "$SANDBOX_PROJECT-red" --only-dir 'MY_TEAM_DIRECTORY' /home/ivm/[dir-name]
 ```
 
-**Note:**  
-- All on a single line  
-- You must use double-quote (`"`) around `$SANDBOX_PROJECT-red`  
-- Replace `MY_TEAM_DIRECTORY` with the name of a directory in red.  
-- You will need to repeat the `gcsfuse` command on each reboot of your Virtual Machine, as it won't persist.  
+!!! success "Note"  
+    * All on a single line
+    * You must use double-quote (`"`) around `$SANDBOX_PROJECT-red`
+    * Replace `MY_TEAM_DIRECTORY` with the name of a directory in `red`
+    * You will need to repeat the `gcsfuse` command on each reboot of your Virtual Machine, as it won't persist.  
 
 All the members of your team should be able to run this command to have the same shared files in the `/home/ivm/[dir-name]` directory.  
 
-### Illustrated example
+#### Illustrated example
 
-![20](images/20.png)
-
+![Image20](../images/using-the-tre/gcloud-storage-alternatives/image20.png)
 Creates a new (empty) directory on `/home/ivm`:  
 
 ![21](images/21.png)
