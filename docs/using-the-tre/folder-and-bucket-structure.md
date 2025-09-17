@@ -56,6 +56,7 @@ The bucket's URL will depend on the sandbox you use.
 ## What's in the bucket?
 
 The _fundamental_ storage resources in the TRE are:
+
 * the `library-red` and `red` buckets containing respectively the G&H -omics data and your sandbox's data
 * your `home` directory
 
@@ -75,7 +76,7 @@ This works as a standard Unix/Linux directory and is **not** a google GCS bucket
 
 #### The `library-red` bucket \[read-only for users\]
 
-!!! info "Identifying `library-red`
+!!! info "Identifying `library-red`"
     * Specificity: common to all sandboxes
     * VM directory: `/genesandhealth/library-red/`
     * URL: `gs://qmul-sandbox-production-library-red/`
@@ -84,7 +85,7 @@ This is a **read-only** folder that is common to all TRE users. `library-red` st
 
 #### The `red` bucket
 
-!!! info "Identifying `red`
+!!! info "Identifying `red`"
     * specificity: sandbox specific
     * VM directory: `/genesandhealth/red/`
     * URL: `gs://qmul-production-sandbox-XX-red/` (replace `XX` with your sandbox number) 
@@ -103,7 +104,7 @@ The `red` bucket is a read-write bucket for TRE users to store scripts and data 
 
 #### The `consortiumpriorityperiod-library-red` bucket
 
-!!! info "Identifying `consortiumpriorityperiod-library-red`
+!!! info "Identifying `consortiumpriorityperiod-library-red`"
     * specificity: restricted sandboxes
     * VM directory: `/genesandhealth/consortiumpriorityperiod-library-red/`
     * URL: `gs://qmul-sandbox-production-library-consortiumpriorityperiod-red` 
@@ -116,7 +117,7 @@ Same storage type as /genesandhealth/library-red, see comments above
 
 #### The `green` bucket \[read-only for users\]
 
-!!! info "Identifying `green`
+!!! info "Identifying `green`"
     * Specificity: sandbox specific
     * VM directory: `/genesandhealth/green/`
     * URL: `gs://fg-qmul-production-sandbox-XX\_green/` (replace `XX` with your sandbox number) 
@@ -125,12 +126,12 @@ Same storage type as /genesandhealth/library-red, see comments above
 
 The admin team will review data-out requests, and either place the data in `green` (for specific users to download, short term) or `library-green` (long term availability for all users to download).
 
-!!! warning "Data in `green`
+!!! warning "Data in `green`"
     Data in each sandbox's `green` will be deleted approximately 1 week after creation. `green` is not intended for long term storage, only data transfer/download.
 
 #### The `consortiumpriorityperiod-library-green` bucket
 
-!!! info "Identifying `consortiumpriorityperiod-library-green`
+!!! info "Identifying `consortiumpriorityperiod-library-green`"
     * Specificity: restricted sandboxes
     * VM directory: `/genesandhealth/consortiumpriorityperiod-library-green/`
     * URL: `gs://qmul-sandbox-production-library-consortiumpriorityperiod-green`
