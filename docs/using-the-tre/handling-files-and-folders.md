@@ -228,11 +228,11 @@ The `red` bucket now contains a (virtual) directory called `JoeBloggs` with the 
 To create a sub-directory in the `red` bucket, you need to create an identical directory tree in `/home/ivm/` (or another drive allowing this) and upload this to `red`.
 For example, suppose we wanted to create a JoeBloggs sub-directory called ‘JB_data_dir’ we would do the following:
 
-![Image13](../images/using-the-tre/gcloud-storage-alternatives/image13.png)
+![13](../images/using-the-tre/gcloud-storage-alternatives/13.png)
 
 And then navigate to the JoeBloggs directory in `/home/ivm/` and right-click “Upload to red bucket”:
 
-![Image14](../images/using-the-tre/gcloud-storage-alternatives/image14.png)
+![14](../images/using-the-tre/gcloud-storage-alternatives/14.png)
 
 You now have the (virtual) directory structure `/red/JoeBloggs/JB_data_dir/` in `red` with the file `JB_data_dir_dummy.txt` in the directory.
 
@@ -284,75 +284,71 @@ gcsfuse --implicit-dirs "$SANDBOX_PROJECT-red" --only-dir 'MY_TEAM_DIRECTORY' /h
 
 All the members of your team should be able to run this command to have the same shared files in the `/home/ivm/[dir-name]` directory.  
 
-#### Illustrated example
+#### Mounting: illustrated example
 
-![Image20](../images/using-the-tre/gcloud-storage-alternatives/image20.png)
+![20](../images/using-the-tre/gcloud-storage-alternatives/20.png)
 Creates a new (empty) directory on `/home/ivm`:  
 
-![21](images/21.png)
+![21](../images/using-the-tre/gcloud-storage-alternatives/21.png)
 
-The equivalent directory on red is not empty (it contains several files and sub and sub-sub directories):  
+The equivalent directory on `red` is not empty (it contains several files and sub and sub-sub directories):  
 
-![22](images/22.png)
+![22](../images/using-the-tre/gcloud-storage-alternatives/22.png)
 
-Now mount red’s JoeBloggs locally:  
+Now mount `red`’s `JoeBloggs` locally:  
 
-![23](images/23.png)
+![23](../images/using-the-tre/gcloud-storage-alternatives/23.png)
+
 Which tells us:  
 
-![24](images/24.png)
+![24](../images/using-the-tre/gcloud-storage-alternatives/24.png)
 
 Now look at `/home/ivm/JoeBloggs`: 
 
-![25](images/25.png) 
+![25](../images/using-the-tre/gcloud-storage-alternatives/25.png)
 
-All the files, directories, sub and sub-sub directories from red’s JoeBloggs are mirrored.  
+All the files, directories, sub and sub-sub directories from `red`’s `JoeBloggs` are mirrored.  
 But `/home/ivm/JoeBloggs/` “behaves” like any linux directory:  
 
-![26](images/26.png)
+![26](../images/using-the-tre/gcloud-storage-alternatives/26.png)
 
 You can add files in any of these various directories:  
 
-![27](images/27.png)
+![27](../images/using-the-tre/gcloud-storage-alternatives/27.png)
 
-And they appear on the locally mounted JoeBloggs:  
+And they appear on the locally mounted `JoeBloggs`:  
 
-![28](images/28.png)
+![28](../images/using-the-tre/gcloud-storage-alternatives/28.png)
 
 And  
 
-![29](images/29.png)
+![29](../images/using-the-tre/gcloud-storage-alternatives/29.png)
 
-But they also appear in the red GCS bucket!  
+But they also appear in the `red` GCS bucket!  
 
-![30](images/30.png)
+![31](../images/using-the-tre/gcloud-storage-alternatives/30.png)
 
-**Note:** You may have to click the refresh circular arrow in the top right corner to see the changes.  
+And
 
-![Image31](images/31.png)
+![32](../images/using-the-tre/gcloud-storage-alternatives/32.png)
 
-![Image32](images/32.png)
+!!! info
+    You may have to click the refresh circular arrow in the top right corner to see the changes.
+    ![30](../images/using-the-tre/gcloud-storage-alternatives/30.png)
 
 If you delete a file in the GCS red bucket:  
 
-![Image33](images/33.png)
+![33](../images/using-the-tre/gcloud-storage-alternatives/33.png)
 
 The file will also be deleted from the locally mounted mirror:
 
-![Image34](images/34.png)
+![34](../images/using-the-tre/gcloud-storage-alternatives/34.png)
 
 Likewise, if you delete a file in the locally mounted mirror:  
 
-
-![Image35](images/35.png)
+![35](../images/using-the-tre/gcloud-storage-alternatives/35.png)
 
 The file will also be deleted from the red GCS bucket:
 
-![Image36](images/36.png)
+![36](../images/using-the-tre/gcloud-storage-alternatives/36.png)
 
-
-</TabItem>
-  
-
-<TabItem value="Home" label="Home">Available at `/home/ivm` in your sandbox, this is your personal folder. This folder can be used to store any files you wish to keep for short duration in your working directories. `/home/ivm` is a semi-fast (HDD) storage and as such is faster than other parts of the sandbox. It might be worth running some jobs here, especially if you are loading large amounts of data. This folder should not be treated as a permanent/long-term storage so anything you want to keep should be moved to the red folder. However, snapshots of the disk/folder are taken on daily basis and are retained for a period of 7 days. In-case you accidently delete some useful data from the /home/ivm folder, you can reach out to the TRE Admins to check if it is possible to recover the disk to a previous snapshot date within last 7 days.</TabItem>
-</Tabs>
