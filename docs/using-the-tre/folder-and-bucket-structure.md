@@ -3,9 +3,9 @@
 To undertand how Genes & Health data are stored and how to use the data resources, we need to understand **Google Cloud Storage (GCS) buckets**.  GCS buckets are used for all data storage in the TRE with the exception of user data in the `home` directory.
 
 !!! note "`home` directory"
-    The `home` directory is associated with the Gene & Health virtual machines rather than GCS --so it is (and behaves as) a standard unix directory.  Files and directories in `home` are created, manipulated and deleted as in Unix/Linux.  Strictly speaking, your `home` directory is a sub-directory of `home`: `/home/ivm` --you have read/write access to `/home/ivm` but read only to `/home`
+    The `home` directory is associated with the Gene & Health virtual machines rather than GCS --so it is (and behaves as) a standard unix directory.  Files and directories in `home` are created, manipulated and deleted as in Unix/Linux.  Strictly speaking, your `home` directory is a sub-directory of `home`: **`/home/ivm`** --you have read/write access to `/home/ivm` but read only to `/home`
     !!! success "`home` directory persistence"
-    The `home` directory is persistent --when you close a virtual machine, the home direcotry will not be deleted and will present the same way next time you spin a new virtual machine --regardless of the configuration of the new VM.  Although the `home` directory is persistent, its use is recommended only for development purposes; we advise ensuring critical code and data are regularly copied to the `red` folder.
+    The `home` directory is **persistent**. When you close a virtual machine, the `home` direcotry will not be deleted and will present the same way next time you spin a new virtual machine --regardless of the configuration of the new VM.  Although the `home` directory is persistent, its use is recommended only for development purposes; we advise ensuring critical code and data are regularly copied to the `red` folder.
 
 ## Understanding Google Cloud Storage (GCS) buckets
 
