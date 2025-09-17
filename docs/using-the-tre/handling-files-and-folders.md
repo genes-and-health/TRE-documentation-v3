@@ -36,7 +36,7 @@ The only gcloud GROUP of relevance to the G&H TRE is the `storage` group.  `gclo
 ### Fundamental `gcloud storage` operations
 
 !!! info "Reminder"
-    You need to identify GCS buckets using their Uniform Resource Locator (URL), for example, the URL for the `red` bucket on sandbox-1 is: `gs://qmul-production-sandbox-1-red/`.  URL for G&H TRE buckets are given in the ("What's in the bucket")[./folder-and-bucket-structure.md#whats-in-the-bucket] sub-section of the ("Understanding TRE folders and buckets")[./folder-and-bucket-structure.md] section.
+    You need to identify GCS buckets using their Uniform Resource Locator (URL), for example, the URL for the `red` bucket on sandbox-1 is: `gs://qmul-production-sandbox-1-red/`.  URL for G&H TRE buckets are given in the ["What's in the bucket"][./folder-and-bucket-structure.md#whats-in-the-bucket] sub-section of the ["Understanding TRE folders and buckets"](./folder-and-bucket-structure.md) section.
 
 !!! warning "Warning"
    `gcloud storage` can replicate common linux file and directory handling commands.
