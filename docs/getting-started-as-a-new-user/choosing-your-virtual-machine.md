@@ -4,10 +4,10 @@ Once logged in, you will be taken to the **Virtual Machines** (VM) page where yo
 ![Virtual Machine options](../images/getting-started-as-a-new-user/virtual-machine-options.png)
 You will be offered a variety of virtual machine types.  
 !!! warning
-    Choose the Basic machine unless a script requires high memory or increased CPU capacity, and is ready to go. Test your script on the Basic machine first, as other options are more expensive.  
+    Choose the `Basic` machine unless a script requires high memory or increased CPU capacity, and is ready to go. Test your script on the `Basic` machine first, as other options are more expensive.  
 
 !!! note
-    Some machine types have many CPUs, which are suitable for multithreaded applications like plink or regenie that can fully utilise them. These applications may sometimes run input/output operations too quickly for standard Google bucket storage, requiring you to copy key files to faster local storage (see below).
+    Some machine types have many CPUs, which are suitable for multithreaded applications like `plink` or `regenie` that can fully utilise them. These applications may sometimes run input/output operations too quickly for standard Google bucket storage, requiring you to copy key files to faster local storage (see [Understanding TRE folders and buckets](/docs/using-the-tre/folder-and-bucket-structure.md).
 
 ## Choosing a custom machine configuration
 
@@ -15,7 +15,7 @@ It is possible you may require a Virtual Machine that offers resources different
 ![Custom Virtual Machine profile](../images/getting-started-as-a-new-user/custom-virtual-machine-profile.png)
 
 !!! warning
-    Choose the Use custom Virtual Machine profile only when absolutely necessary, use Basic machine unless a script requires high memory or increased CPU capacity. Excess use of higher-spec machines can significantly impact running costs. Test your script on the Basic machine first, as other options are more expensive.
+    Choose the **Use custom Virtual Machine profile only** when absolutely necessary. Excess use of higher-spec machines can significantly impact running costs.
 
 ## Switching off the machine
 
