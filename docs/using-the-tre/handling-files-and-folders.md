@@ -20,7 +20,7 @@ All operations mentioned in items 1, 2 and 3 above can be completed using `gclou
 `gcloud` is the Google Cloud Services' Command Line Interface (CLI): a set of tools to create and manage Google Cloud resources.  `gcloud` has multiple GROUPS which handle a specific aspect of the Google Cloud.  For example, `gcloud sql` handles the creation and management of Google Cloud SQL databases and `gcloud source` handles cloud git repository commands.
 
 The only gcloud GROUP of relevance to the G&H TRE is the `storage` group.  `gcloud storage` handles the creation and management of Cloud Storage buckets and objects (files).
-`gcloud storage` documentation can be found on [gcloud storage reference](https://cloud.google.com/sdk/gcloud/reference/storage) website.
+`gcloud storage` documentation can be found on [`gcloud storage` reference website](https://cloud.google.com/sdk/gcloud/reference/storage).
 
 !!! danger "What if I’m using `gutils`?"
     Some of you may have been using gutils to manage Cloud Storage buckets and objects.  The `gutils` commands are now deprecated.
@@ -35,7 +35,17 @@ The only gcloud GROUP of relevance to the G&H TRE is the `storage` group.  `gclo
 ### Fundamental `gcloud storage` operations
 
 !!! info "Reminder"
-    You need to identify GCS buckets using their `Uniform Resource Locator`
+    You need to identify GCS buckets using their Uniform Resource Locator (URL), for example, the URL for the `red` bucket on sandbox-1 is: `gs://qmul-production-sandbox-1-red/`.  URL for G&H TRE buckets are given in the ("What's in the bucket")[./folder-and-bucket-structure.md#whats-in-the-bucket] sub-section of the ("Understanding TRE folders and buckets")[./folder-and-bucket-structure.md] section.
+
+!!! warning "Warning"
+   `gcloud storage` can replicate common linux file and directory handling commands.
+   <p>
+   * These commands are powerful, you could easily accidentally delete entire directories or rewrite files.
+   * Do read the [`gcloud storage` documentation](https://cloud.google.com/sdk/gcloud/reference/storage).
+   * Consider backing up data before uploading or downloading it to/from a google bucket
+   * Favour copying over moving (at least one copy of your files should remain)
+   * Understand that the gcloud storage copy and move operations are **non-atomic**.  This means it is not an all or nothing (completes or doesn’t complete) command, rather, it performs a copy from source to destination followed by, for move operations, deleting the each source object.  If the command does not complete, you may end up with some files copied/moved/renamed and others not.
+   * A consequence of this is that, in addition to normal network and operation charges, if you move a Nearline Storage, Coldline Storage, or Archive Storage object, deletion and data retrieval charges apply.
 
 #### Creating a new directory (in `red`)
 
@@ -70,21 +80,13 @@ You now have created all the (virtual) sub-directories along the way:
 
 ![19](../images/using-the-tre/using-gcloud-storage/19.png)
 
-Please note that this will only upload new files or directories (as long as they contain at least one file or non-empty subdirectory) to the /red/ bucket. Pre-existing files in /red/ will not be affected.  For example, you can see that the “temp.txt” file we created in /red/JoeBloggs/ when we used the `gcloud storage cp ./temp.txt gs://qmul-production-sandbox-1-red/JoeBloggs/` command is still there.
-Remember if you delete all files in a /red/ bucket directory, you will also delete the virtual directory they are in.  
-In the example above, if you delete /red/JoeBloggs/Data/GWAS_data/Jan2024/temp.txt, you will lose directories ‘Jan2024’, ‘GWAS_data’ and ‘Data’ because all of these would end up empty.
+Please note that this will only upload new files or directories (as long as they contain at least one file or non-empty subdirectory) to the `red` bucket. Pre-existing files in `red` will not be affected.  For example, you can see that the `temp.txt` file we created in `/red/JoeBloggs/` when we used the `gcloud storage cp ./temp.txt gs://qmul-production-sandbox-1-red/JoeBloggs/` command is still there.  However, if you delete all files in a `red` bucket directory, you will also delete the virtual directory they are in.  
+
+In the example above, if you delete `/red/JoeBloggs/Data/GWAS_data/Jan2024/temp.txt`, you will lose directories `Jan2024`, `GWAS_data` and `Data` because all of these would end up empty.
 
 #### Other gcloud storage commands
 
-‘gcloud storage’ can replicate common linux file and directory handling commands (see https://cloud.google.com/sdk/gcloud/reference/storage).  
-> ⚠️ BE CAREFUL: 
-•	These commands are “powerful”, you could easily accidentally delete entire directories or rewrite files
-•	You could easily delete someone else files or directories
-•	Do read the gcloud storage documentation
-•	Consider backing up data before uploading or downloading it to/from a google bucket
-•	Favour ‘cp’ over ‘mv’ (at least one copy of your files should remain)
-•	Understand that gcloud copy (cp) and move (mv) are non-atomic operation.  This means it is not an all or nothing (completes or doesn’t complete) command, rather, it performs a copy from source to destination followed by, for move, deleting the source for each object.  If the command does not complete, you may end up with some files copied/moved/renamed and others not.
-•	A consequence of this is that, in addition to normal network and operation charges, if you move a Nearline Storage, Coldline Storage, or Archive Storage object, deletion and data retrieval charges apply.
+
 Here are some of the main gcloud storage commands:
 
 ## List all buckets and files: ls command
