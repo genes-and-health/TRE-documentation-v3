@@ -98,12 +98,12 @@ This is a **read-only** folder that is common to all TRE users. `library-red` st
 The `red` bucket is a read-write bucket for TRE users to store scripts and data safely (with versioning back-up) and to permit the sharing of these between project collaborators. It is the only GCS bucket **directly** accessible to non-admin TRE users.  You are advised to create your own subfolder in `red`; user folders are typically created as FirstnameLastname (so `/genesandhealth/red/JoeBloggs/`) although some iconoclasts have broken this convention.
 
 !!! danger "With great power..."
-    **comes great responsability.**  The `red` bucket is shared between all sandbox users **--even if you have created your own sub-directory**.  This means that you can:
+    The `red` bucket is shared between all sandbox users **--even if you have created your own sub-directory**.  This means that you can:
     
     * See all other sandbox users' files (and all other sandbox users can see your files)
     * Move/rename/delete **any** sandbox users' files 
     <p>
-    Exercise great caution when moving or deleting files in the `red` bucket.
+    **Exercise caution when moving or deleting files in the `red` bucket.**
 
 #### The `consortiumpriorityperiod-library-red` bucket
 
