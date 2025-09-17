@@ -9,7 +9,7 @@ There are four main scenarios to consider when using files and folders in the G&
 All operations mentioned in items 1, 2 and 3 above can be completed using `gcloud storage` commands.  All operations in item 4 can be performed using standard unix/linux shell commands (e.g. `cp`, `mv`, `rm`, `mkdir`) or the File Manager GUI.
 
 !!! tip "Reminders"
-    * Google Cloud Services (GCS) buckets are explained in the ["Understanding TRE folders and buckets"](/docs/using-the-tre/folder-and-bucket-structure.md) section.
+    * Google Cloud Services (GCS) buckets are explained in the ["Understanding TRE folders and buckets"](./folder-and-bucket-structure.md) section.
     * `library-red` is a read-only bucket for TRE users, you cannot add to it or make any changes to it.
     * Your `home` directory "belongs" to the virtual machine.  It behaves like a standar unix/linux files system. Its actual path is **`/home/ivm/`**. 
 
