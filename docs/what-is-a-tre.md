@@ -8,7 +8,7 @@ Probably! Many think of Trusted Research Environments and Secure Data Environmen
 
 At present, the Genes & Health  secure data and research analysis platform remains identified as a TRE 
 
-!!note
+!!! info ""
     It's probably not worth worrying about such things anyway.
 
 ## What defines a TRE?
