@@ -1,4 +1,4 @@
-# Folder and bucket structure
+# Understanding TRE folders and buckets
 
 To undertand how Genes & Health data are stored and how to use the data resources, we need to understand **Google Cloud Storage (GCS) buckets**.  GCS buckets are used for all data storage in the TRE with the exception of user data in the `home` directory.
 
