@@ -162,71 +162,11 @@ We also maintain a bucket for public datasets. This is not visible from within t
 gs://genesandhealth\_publicdatasets/
 ```
 
-## Moving TRE data
-
-TRE user have two data storage resources available to them: i) their virtual machine `home` directory (`/home/ivm`), ii) the `red` GCS bucket.  Users therefore need to be able to perform one of three file handling operations:
-
-1. Copying data from `library-red` or `red` to `/home/ivm`
-2. Copying data from `/home/ivm` to `red`
-3. Deleting data from `red`
-
-!!! note
-    Users may also wish to move/copy/rename/delete files and directories within `/home/ivm/` however, as prevously stated `home` behaves as a standard unix/linux filesystem and therefore standard unix `mv`, `cp`, `rm`, `rmdir` commands can be used for file manipulation.  
-
-The three ways to manipulate folders and files in the red bucket are:
-
-1. using the “Upload to red bucket” option in the File Manager,  
-2. using the gcloud command line interface,  
-3. mounting your red folder into your virtual machine.
-
-### Copying data to red
-
-Once you have located the file/folder you want to copy into red, right click on that object and select “Upload to red bucket”:
-
-![](images/sandboxes-and-folder-structures/upload-to-red-bucket-contextual-menu.png)
-
-A new window will then pop-up allowing you to select where in red you want this data to go (“red” is the top directory in red so it’s recommended you navigate to a personal or project red directory before selecting “OK”):  
-
-![](images/sandboxes-and-folder-structures/select-or-create-folder.png)
-
-* You can use the “Browse” button to find and select existing directories in red.
-
-* If you select the “Create New Folder” button, it will prompt you for a name, and then create a new folder in the location currently selected.
-
-* Selecting “OK” will begin the copying process into the directory chosen and you will see a new window documenting the outcome, for example:   
-    
-![](images/sandboxes-and-folder-structures/upload-to-red-bucket-progress-bar.png)
-
-## Folder structures
-
-### consortiumpriorityperiod-library-red
-
-This bucket is only available to the core Genes & Health team, and to companies in the Genes & Health Industry Consortium. It contains data restricted during 9 month priority access periods (e.g. exome sequencing). Specifically, read access is only for sandboxes 1 3 4 5 6 7 9 10 13\.
-
-Same storage type as **/genesandhealth/library-red**, see comments above
-
-**/genesandhealth/consortiumpriorityperiod-library-red** is a google storage bucket **gs://qmul-sandbox-production-library-consortiumpriorityperiod-red** (read+write only for admins)
-
-### Green folders
-
-#### **green**
-
-
-
-
-
-
-### Copying between Google Buckets within the TRE
-
-Is permitted from within the TRE, subject to user read/write permissions as above.
-
-Admins may copy from Google Buckets to external systems. However external copy from external Google Buckets direct to/from TRE Google Buckets is prohibited for security reasons.
-
-### Backups
+## Backups
 
 Data in selected folders is protected from accidental deletion or alteration by the Google Object Versioning service. Specifically, for data in these folders \-
 
-#### **Shared folders**
+### Backups: Shared folders
 
 /genesandhealth/library-red , 1 version, 30 days
 
@@ -234,7 +174,7 @@ Data in selected folders is protected from accidental deletion or alteration by 
 
 /genesandhealth/nhsdigital-sublicence-red, 1 version, 30 days
 
-#### **Sandbox-specific folders**
+### Backups: Sandbox-specific folders
 
 /genesandhealth/red, 2 versions, 30 days
 
@@ -246,4 +186,4 @@ This allows the prior version to be restored, in the event of accidental erasure
 
 To say this another way: imagine you accidentally alter or delete a file in the /genesandhealth/library-red folder. Then the version of the file prior to its removal can be restored, for up to 30 days after the change. In the sandbox-specific /genesandhealth/red folder, two prior versions of the file will be kept, each for 30 days after the change leading to its creation.
 
-Restoring a prior version of an accidentally removed or modified file requires utilities only available to administrators: if you need this, contact us using Slack or writing to hgi@sanger.ac.uk, including the word "Urgent" in the subject header.
+Restoring a prior version of an accidentally removed or modified file requires utilities only available to administrators: if you need this, contact us by writing to <hgi@sanger.ac.uk>, including the word "Urgent" in the subject header.
