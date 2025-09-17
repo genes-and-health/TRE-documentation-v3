@@ -1,6 +1,7 @@
 # Handling files and folders
 
 There are four main scenarios to consider when using files and folders in the G&H TRE:
+
 1. Moving files or folders from a GCS bucket to your `home` directory
 2. Moving files or folder from you `home` directory to the `red` GCS bucket
 3. Creating/renaming/moving/deleting files and folders in the `red` GCS bucket
@@ -20,10 +21,11 @@ All operations mentioned in items 1, 2 and 3 above can be completed using `gclou
 `gcloud` is the Google Cloud Services' Command Line Interface (CLI): a set of tools to create and manage Google Cloud resources.  `gcloud` has multiple GROUPS which handle a specific aspect of the Google Cloud.  For example, `gcloud sql` handles the creation and management of Google Cloud SQL databases and `gcloud source` handles cloud git repository commands.
 
 The only gcloud GROUP of relevance to the G&H TRE is the `storage` group.  `gcloud storage` handles the creation and management of Cloud Storage buckets and objects (files).
+
 `gcloud storage` documentation can be found on [`gcloud storage` reference website](https://cloud.google.com/sdk/gcloud/reference/storage).
 
 !!! danger "What if I’m using `gutils`?"
-    Some of you may have been using gutils to manage Cloud Storage buckets and objects.  The `gutils` commands are now deprecated.
+    Some of you may have been using `gutils` to manage Cloud Storage buckets and objects.  The `gutils` commands are now **deprecated**.
     <p>
     ⚠️ BE CAREFUL:
     
@@ -36,17 +38,17 @@ The only gcloud GROUP of relevance to the G&H TRE is the `storage` group.  `gclo
 ### Fundamental `gcloud storage` operations
 
 !!! info "Reminder"
-    You need to identify GCS buckets using their Uniform Resource Locator (URL), for example, the URL for the `red` bucket on sandbox-1 is: `gs://qmul-production-sandbox-1-red/`.  URL for G&H TRE buckets are given in the ["What's in the bucket"][./folder-and-bucket-structure.md#whats-in-the-bucket] sub-section of the ["Understanding TRE folders and buckets"](./folder-and-bucket-structure.md) section.
+    You need to identify GCS buckets using their Uniform Resource Locator (URL), for example, the URL for the `red` bucket on sandbox-1 is: `gs://qmul-production-sandbox-1-red/`.  URL for G&H TRE buckets are given in the ["What's in the bucket"](./understanding-tre-folders-and-buckets#whats-in-the-bucket] or ["What's in the bucket V2"](./understanding-tre-folders-and-buckets.md#whats-in-the-bucket] sub-section of the ["Understanding TRE folders and buckets"](./understanding-tre-folders-and-buckets) section.
 
 !!! warning "Warning"
-   `gcloud storage` can replicate common linux file and directory handling commands.
-   <p>
-   * These commands are powerful, you could easily accidentally delete entire directories or rewrite files.
-   * Do read the [`gcloud storage` documentation](https://cloud.google.com/sdk/gcloud/reference/storage).
-   * Consider backing up data before uploading or downloading it to/from a google bucket
-   * Favour copying over moving (at least one copy of your files should remain)
-   * Understand that the gcloud storage copy and move operations are **non-atomic**.  This means it is not an all or nothing (completes or doesn’t complete) command; rather, it performs a copy from source to destination followed by, for move operations, deleting the each source object.  If the command does not complete, you may end up with some files copied/moved/renamed and others not.
-   * A consequence of this is that, in addition to normal network and operation charges, if you move a Nearline Storage, Coldline Storage, or Archive Storage object, deletion and data retrieval charges apply.
+    `gcloud storage` can replicate common linux file and directory handling commands.
+    <p>
+    * These commands are powerful, you could easily accidentally delete entire directories or rewrite files.
+    * Do read the [`gcloud storage` documentation](https://cloud.google.com/sdk/gcloud/reference/storage).
+    * Consider backing up data before uploading or downloading it to/from a google bucket
+    * Favour copying over moving (at least one copy of your files should remain)
+    * Understand that the gcloud storage copy and move operations are **non-atomic**.  This means it is not an all or nothing (completes or doesn’t complete) command; rather, it performs a copy from source to destination followed by, for move operations, deleting the each source object.  If the command does not complete, you may end up with some files copied/moved/renamed and others not.
+    * A consequence of this is that, in addition to normal network and operation charges, if you move a Nearline Storage, Coldline Storage, or Archive Storage object, deletion and data retrieval charges apply.
 
 #### Creating a new directory (in `red`)
 
