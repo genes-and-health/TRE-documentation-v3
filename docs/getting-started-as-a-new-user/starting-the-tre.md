@@ -1,7 +1,7 @@
 # Starting the TRE
 
 !!! tip "Browser choice"
-    Although the G&H TRE might work with any browsers, we recommend using Chrome.
+    Although the G&H TRE might work with other browsers, we recommend using Chrome.
 
 Having selected your username@genesandhealth.qmul.ac.uk account as your profile for Chrome, enter the G&H TRE’s URL in your Chrome browser. Your URL will start with [https://new-production.genesandhealth.qmul.ac.uk/](https://new-production.genesandhealth.qmul.ac.uk/).
 
