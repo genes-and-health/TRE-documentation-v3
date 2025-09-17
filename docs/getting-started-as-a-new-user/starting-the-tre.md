@@ -3,7 +3,7 @@
 !!! tip "Browser choice"
     Although the G&H TRE should work with any browsers, we recommend using Chrome or Firefox.
 
-Having selected your username@genesandhealth.qmul.ac.uk account as your Chrome Profile, enter the G&H TRE’s URL in your Chrome browser. Your URL will start with [https://new-production.genesandhealth.qmul.ac.uk/](https://new-production.genesandhealth.qmul.ac.uk/). The full URL is dependent on your sandbox and can be obtained from the table below.  
+Having selected your username@genesandhealth.qmul.ac.uk account as your profile for Chrome (or equivalent profile supporting browser), enter the G&H TRE’s URL in your Chrome browser. Your URL will start with [https://new-production.genesandhealth.qmul.ac.uk/](https://new-production.genesandhealth.qmul.ac.uk/). The full URL is dependent on your sandbox and can be obtained from the table below.  
 This will take you to the TRE login page. You will be asked to enter your username and password. The username is the one you have been given by the Genes and Health team, and the password is the one you have set up when you first logged in.  
 If you want to go a specific sandbox, you can use the following URL table:
 
