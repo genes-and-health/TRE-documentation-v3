@@ -63,7 +63,7 @@ nav:
       - Starting the TRE: getting-started-as-a-new-user/starting-the-tre.md
       - Choosing your required virtual machine configuration: getting-started-as-a-new-user/choosing-your-virtual-machine.md
   - Using the TRE:
-      - Understanding TRE folders and buckets: using-the-tre/folder-and-bucket-structure.md
+      - Understanding TRE folders and buckets: using-the-tre/understanding-tre-folders-and-buckets.md
       - Files and folders - creating, moving, renaming, deleting: using-the-tre/handling-files-and-folders.md
       - Running a GWAS: using-the-tre/running-a-gwas.md
   - Getting data in and out of the TRE: 
