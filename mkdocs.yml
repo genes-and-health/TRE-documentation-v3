@@ -81,7 +81,7 @@ nav:
 #  - Switching off the machine: switching-off-the-machine.md
 #  - GWAS Training Video: gwas-training-video.md
 #  - GWAS Example: gwas-example.md
-  - Folder and bucket structure: folder-and-bucket-structure.md
+#  - Folder and bucket structure: folder-and-bucket-structure.md
 #  - library-red: library-red.md
 #  - Red: red.md
 #  - Understanding G\&H Buckets: understanding-g&h-buckets.md
@@ -128,7 +128,7 @@ nav:
   # - Existing data: existing-data.md
   # - Requesting data: requesting-data.md
   # - Accessing TRE data from external systems/internet: accessing-tre-data-from-external-systems/internet.md
-  - Explainers: explainers.md
+  # - Explainers: explainers.md
 #  - How is data linked: how-is-data-linked.md
 #  - Where are the data from: where-are-the-data-from.md
 #  - Raw health data overview (UNDER CONSTRUCTION): raw-health-data-overview-\(under-construction\.md)
@@ -154,7 +154,7 @@ nav:
 #  - Example workflow: example-workflow-1.md
 #  - Example code: example-code-2.md
 #  - Module Manager User Guide: module-manager-guide.md
-  - How to get Help: how-to-get-help.md
+#  - How to get Help: how-to-get-help.md
 #  - MkDocs Hosting Options: mkdocs-hosting-options.md
   - How to update this documentation: how-to-update-this-documentation.md
 
