@@ -44,7 +44,7 @@ The only gcloud GROUP of relevance to the G&H TRE is the `storage` group.  `gclo
    * Do read the [`gcloud storage` documentation](https://cloud.google.com/sdk/gcloud/reference/storage).
    * Consider backing up data before uploading or downloading it to/from a google bucket
    * Favour copying over moving (at least one copy of your files should remain)
-   * Understand that the gcloud storage copy and move operations are **non-atomic**.  This means it is not an all or nothing (completes or doesn’t complete) command, rather, it performs a copy from source to destination followed by, for move operations, deleting the each source object.  If the command does not complete, you may end up with some files copied/moved/renamed and others not.
+   * Understand that the gcloud storage copy and move operations are **non-atomic**.  This means it is not an all or nothing (completes or doesn’t complete) command; rather, it performs a copy from source to destination followed by, for move operations, deleting the each source object.  If the command does not complete, you may end up with some files copied/moved/renamed and others not.
    * A consequence of this is that, in addition to normal network and operation charges, if you move a Nearline Storage, Coldline Storage, or Archive Storage object, deletion and data retrieval charges apply.
 
 #### Creating a new directory (in `red`)
@@ -84,12 +84,7 @@ Please note that this will only upload new files or directories (as long as they
 
 In the example above, if you delete `/red/JoeBloggs/Data/GWAS_data/Jan2024/temp.txt`, you will lose directories `Jan2024`, `GWAS_data` and `Data` because all of these would end up empty.
 
-#### Other gcloud storage commands
-
-
-Here are some of the main gcloud storage commands:
-
-## List all buckets and files: ls command
+#### Listing all buckets and files: `ls` command
 
 ```bash
 gcloud storage ls [PATH …]
@@ -105,7 +100,7 @@ This will list all `.csv` files in any directory in `GWAS_Data` which starts wit
 
 ---
 
-## Upload, download, and copy
+#### Uploading, downloading, and copying
 
 The general format is:
 
@@ -117,7 +112,7 @@ We have seen how to upload files to Google Cloud with `cp` above when learning h
 
 ---
 
-### Copy an entire directory tree (i.e., directory, subdirectory, and all its content) to red
+##### Copying an entire directory tree (i.e., directory, subdirectory, and all its content)
 
 Use the `--recursive` option to copy an entire directory tree. The following command “uploads” the directory tree `dir` to the red directory:
 
@@ -125,9 +120,7 @@ Use the `--recursive` option to copy an entire directory tree. The following com
 gcloud storage cp --recursive dir gs://qmul-production-sandbox-1-red
 ```
 
----
-
-### Copy to your current (local) directory
+##### Copying to your current (local) directory
 
 In this example, the command will copy (“download”) all `.txt` files in `JoeBloggs` to your current local directory:
 
@@ -135,13 +128,9 @@ In this example, the command will copy (“download”) all `.txt` files in `Joe
 gcloud storage cp gs://qmul-production-sandbox-1-red/JoeBloggs/*.txt .
 ```
 
-[Don’t forget the `.` at the end.]
+\[Don’t forget the `.` at the end.\]
 
----
-
-## Move and rename
-
-### > ⚠️ BE CAREFUL: Please read the **BE CAREFUL** section above before moving files/directories. 
+#### Moving and renaming
 
 The general template is:
 
@@ -149,9 +138,7 @@ The general template is:
 gcloud storage mv [SOURCE …] DESTINATION
 ```
 
----
-
-### To move all objects from a local directory to a bucket
+##### Moving all objects from a local directory to a bucket
 
 ```bash
 gcloud storage mv ./dir gs://qmul-production-sandbox-1-red/JoeBloggs/
@@ -159,31 +146,20 @@ gcloud storage mv ./dir gs://qmul-production-sandbox-1-red/JoeBloggs/
 
 Note: All files will be moved from `./dir` to `/JoeBloggs/` (so will no longer be in `./dir`) but the `./dir` and any subdirectories in it will remain in the local directory.
 
----
-
-### To move all objects from a bucket to a local directory
+##### Moving all objects from a bucket to a local directory
 
 ```bash
 gcloud storage mv gs://qmul-production-sandbox-1-red/JoeBloggs/* dir
 ```
 
----
-
-### To rename a file
+##### Renaming a file
 
 ```bash
 gcloud storage mv gs://qmul-production-sandbox-1-red/JoeBloggs/old_name.txt gs://qmul-production-sandbox-1-red/JoeBloggs/new_name.txt
 ```
 
-[Remember `old_name.txt` will be copied to `new_name.txt` and then `old_name.txt` will be deleted; if `old_name.txt` is very large, this may incur data charges.]
+\[Remember `old_name.txt` will be copied to `new_name.txt` and then `old_name.txt` will be deleted; if `old_name.txt` is very large, this may incur data charges.\]
 
-
-![Image2](images/image2.png)
-
-Physically though, as the /red/ bucket is stored on a Google Cloud file server,  it has a Uniform Resource Locator (URL).  The URL will depend on the sandbox you use.  
-For sandbox-1, the URL is gs://qmul-production-sandbox-1-red/ and, predictably, you need to change the number in the URL to match your sandbox number.  When moving things to and from the red bucket using either gcloud (Option 2) or file mounting (Option 3), you will need to use the URL.
-
----
 
 ## Option 1: “Upload to red bucket” option in the File Manager
 
