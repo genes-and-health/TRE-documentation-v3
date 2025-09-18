@@ -1,0 +1,1107 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://genes-and-health.github.io/test-docs/module-manager-guide/">
+      
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.20">
+    
+    
+      
+        <title>Module Manager User Guide - Genes & Health TRE Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.e53b48f4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#module-manager-user-guide" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Genes &amp; Health TRE Documentation" class="md-header__button md-logo" aria-label="Genes & Health TRE Documentation" data-md-component="logo">
+      
+  <img src="../images/branding/genes-and-health-logo-green.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Genes & Health TRE Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Module Manager User Guide
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/genes-and-health/test-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Genes &amp; Health TRE Documentation" class="md-nav__button md-logo" aria-label="Genes & Health TRE Documentation" data-md-component="logo">
+      
+  <img src="../images/branding/genes-and-health-logo-green.svg" alt="logo">
+
+    </a>
+    Genes & Health TRE Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/genes-and-health/test-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../what-is-a-tre/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    What is a TRE ?
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Getting started as a new user
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Getting started as a new user
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-started-as-a-new-user/steps-to-get-access/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Getting access and setting up a profile
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sandboxes-and-what-each-sandbox-can-access/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Sandboxes and what each sandbox can access
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-started-as-a-new-user/starting-the-tre/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Starting the TRE
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-started-as-a-new-user/choosing-your-virtual-machine/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Choosing your required virtual machine configuration
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Using the TRE
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Using the TRE
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../using-the-tre/understanding-tre-folders-and-buckets/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Understanding TRE folders and buckets
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../using-the-tre/handling-files-and-folders/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Handling files and folders
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../using-the-tre/running-a-gwas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Running a GWAS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Getting data in and out of the TRE
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Getting data in and out of the TRE
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-data-in-and-out-of-the-TRE/how-to-get-your-data-in/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    How to get your data in
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-data-in-and-out-of-the-TRE/requesting-data-out-of-the-TRE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Requesting data out of the TRE
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../latest-tre-data-updates-and-changes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Latest TRE data updates and changes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../what-genetic-and-health-data-is-where/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    What genetic and health data is where
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../software%2C-modules%2C-requesting-installs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Software, modules, requesting installs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../how-to-use-docker/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    How to use docker
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../how-to-write-hash-symbols/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    How to write hash symbols
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../how-to-increase-disk-size/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    How to increase disk size​
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../how-to-update-this-documentation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    How to update this documentation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-a-module" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Is a Module?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started" class="md-nav__link">
+    <span class="md-ellipsis">
+      Getting Started
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gui-usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      GUI Usage
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="GUI Usage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Actions:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cli-usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      CLI Usage
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="CLI Usage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-load-a-module" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Load a Module
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-unload-a-module" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Unload a Module
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-restore-all-modules" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Restore All Modules
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-list-available-modules" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. List Available Modules
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-list-currently-loaded-modules" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. List Currently Loaded Modules
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-check-module-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Check Module Status
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-unload-all-modules" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Unload All Modules
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/genes-and-health/test-docs/edit/main/docs/module-manager-guide.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="module-manager-user-guide">Module Manager User Guide<a class="headerlink" href="#module-manager-user-guide" title="Permanent link">&para;</a></h1>
+<p>Module Manager is a simple, user-friendly tool designed to help you manage Singularity-based software modules in your research or development environment.</p>
+<p>This guide will walk you through how to load, unload, inspect, and restore software modules using both the command-line interface (CLI) and the graphical user interface (GUI).</p>
+<h2 id="what-is-a-module">What Is a Module?<a class="headerlink" href="#what-is-a-module" title="Permanent link">&para;</a></h2>
+<p>A module is a self-contained package that includes:</p>
+<ol>
+<li>A Singularity container (singularity.sif) with the software</li>
+<li>A meta.yaml file describing:<ul>
+<li>What commands the module provides</li>
+<li>What packages are inside</li>
+</ul>
+</li>
+</ol>
+<p>Loading a module makes its commands available in your terminal — no need to deal with paths or environment variables. </p>
+<p>For example, if you load a module r-ggplot, this will expose a R command in your terminal (replacing the default R command). When you run the R command from your terminal, the R environment from that module/container will effectively be in use and any bundled packages in the container are available. From the user's perspective, it works similar to using native R installation.</p>
+<h2 id="getting-started">Getting Started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h2>
+<p>You can interact with the Module Manager in two ways:</p>
+<ol>
+<li>Terminal (CLI): For users who prefer scripting or command lines.</li>
+<li>Graphical Interface (GUI): Simplest, for those who want a more intuitive, click-friendly experience.</li>
+</ol>
+<h2 id="gui-usage">GUI Usage<a class="headerlink" href="#gui-usage" title="Permanent link">&para;</a></h2>
+<p>You can find the ‘Module Manager’ application icon on your desktop. You can also find it from the top-left drop-down menu (Applications &gt;&gt; Genes &amp; Health):</p>
+<p><img alt="Module Manager App" src="../images/module-manager/module-manager-app.png" /></p>
+<p>Once you have launched the application, the interface will look like this:</p>
+<p><img alt="Module Manager GUI" src="../images/module-manager/module-manager-gui.png" /></p>
+<p><strong>Search Modules (Top):</strong> Use the search bar to filter modules by name. You can start typing keywords in the search bar to find available packages.</p>
+<p><strong>Available Modules (Left Panel):</strong> Displays a list of all the available modules.</p>
+<p><strong>Module Description (Bottom Left Panel):</strong> When you click on a module from the ‘Available Modules’ panel, a module description will appear in this panel. The description will usually include following information:
+    - A general description of the module and its intent.
+    - Packages Included: A list of packages installed and available in the module.
+    - Commands Exported: A list of commands that the module will expose to the user terminal.</p>
+<p><strong>Loaded Modules (Bottom Right Panel):</strong> Shows a list of the loaded modules along with the commands they expose.</p>
+<h3 id="actions">Actions:<a class="headerlink" href="#actions" title="Permanent link">&para;</a></h3>
+<p><strong>Load:</strong> Once you have selected a module from the ‘Available Modules’ panel, you can click the Load button to make the module's commands available in your shell. The loaded modules will now be shown in the ‘Loaded Modules’ panel at the bottom right along with the list of commands they expose.</p>
+<p><img alt="Loaded Modules" src="../images/module-manager/loaded-modules.png" /></p>
+<p><strong>Unload:</strong> After selecting a module from the ‘Available Modules’ panel, you can click on the Unload button to remove a module and its commands from your shell.</p>
+<p><strong>Status:</strong> Check if a module is loaded, and view its details.</p>
+<p><strong>Restore:</strong> Re-load all previously active modules (e.g., after a reboot).</p>
+<p><strong>Unload All:</strong> Remove all active modules in one click.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The modules in the ‘Loaded Modules’ panel appear in the LIFO order. If two loaded modules expose the same command (e.g. R), only the top-most (latest loaded) module is active and is available in the user terminal.</p>
+</div>
+<p>In the following example, both R-SAIGE and R-aio expose the R command to the user terminal. However, as the R-SAIGE is the latest one (at top of the list), this is the effective module and typing the R command will load this module’s R environment.</p>
+<p><img alt="Loaded Modules" src="../images/module-manager/loaded-modules-2.png" /></p>
+<p>Once you have unloaded the last loaded module that exposes R (R-SAIGE), the previously loaded module (R-aio) will become active and now the R command from the terminal will point to the R-aio:</p>
+<p><img alt="Loaded Modules" src="../images/module-manager/loaded-modules-3.png" /></p>
+<h2 id="cli-usage">CLI Usage<a class="headerlink" href="#cli-usage" title="Permanent link">&para;</a></h2>
+<p>If you're comfortable in the terminal, the module-manager CLI tool gives you precise control.</p>
+<h3 id="1-load-a-module">1. Load a Module<a class="headerlink" href="#1-load-a-module" title="Permanent link">&para;</a></h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>$ module-manager load &lt;module-name&gt;
+</span></code></pre></div>
+<ul>
+<li>Checks if the module is already loaded.</li>
+<li>Creates lightweight command wrappers in ~/.local/share/modules/bin/</li>
+<li>Lets you run module commands directly in your terminal.</li>
+</ul>
+<p><strong>Example:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>$ module-manager load bcftools
+</span></code></pre></div></p>
+<p>Now you can simply run:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>$ bcftools view file.vcf
+</span></code></pre></div></p>
+<p>Under the hood, this command is being executed inside the corresponding Singularity container.</p>
+<h3 id="2-unload-a-module">2. Unload a Module<a class="headerlink" href="#2-unload-a-module" title="Permanent link">&para;</a></h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>$ module-manager unload &lt;module-name&gt;
+</span></code></pre></div>
+<ul>
+<li>Removes the command wrappers for the module</li>
+<li>Updates your "loaded modules" list</li>
+</ul>
+<p><strong>Example:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>$ module-manager unload bcftools
+</span></code></pre></div></p>
+<h3 id="3-restore-all-modules">3. Restore All Modules<a class="headerlink" href="#3-restore-all-modules" title="Permanent link">&para;</a></h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>$ module-manager restore
+</span></code></pre></div>
+<p>Use this after a logout/reboot to restore all previously loaded modules. Most of the time this won’t be needed, as Module Manager preserves last state.</p>
+<h3 id="4-list-available-modules">4. List Available Modules<a class="headerlink" href="#4-list-available-modules" title="Permanent link">&para;</a></h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>$ module-manager list-available
+</span></code></pre></div>
+<p>Shows all available modules.</p>
+<h3 id="5-list-currently-loaded-modules">5. List Currently Loaded Modules<a class="headerlink" href="#5-list-currently-loaded-modules" title="Permanent link">&para;</a></h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>$ module-manager list-loaded
+</span></code></pre></div>
+<p>Displays all modules you've loaded, along with the commands they expose.</p>
+<h3 id="6-check-module-status">6. Check Module Status<a class="headerlink" href="#6-check-module-status" title="Permanent link">&para;</a></h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>$ module-manager status &lt;module-name&gt;
+</span></code></pre></div>
+<p>Gives a detailed view of:
+  - Whether the module exists
+  - Whether it's loaded
+  - Which commands are available</p>
+<h3 id="7-unload-all-modules">7. Unload All Modules<a class="headerlink" href="#7-unload-all-modules" title="Permanent link">&para;</a></h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>$ module-manager unload-all
+</span></code></pre></div>
+<p>Removes all active modules and their command wrappers.</p>
+<h1 id="frequently-asked-questions">Frequently Asked Questions<a class="headerlink" href="#frequently-asked-questions" title="Permanent link">&para;</a></h1>
+<h3 id="where-do-my-modules-come-from">Where do my modules come from?<a class="headerlink" href="#where-do-my-modules-come-from" title="Permanent link">&para;</a></h3>
+<p>They live in /genesandhealth/library-red/modules. Your TRE admins maintain these.</p>
+<div class="admonition tips">
+<p class="admonition-title">Tips</p>
+<p>You can load multiple modules at once. They won't interfere with each other unless they export the same command names. 
+Use status before loading or unloading a module to see what's going on.</p>
+</div>
+<h1 id="need-help">Need Help?<a class="headerlink" href="#need-help" title="Permanent link">&para;</a></h1>
+<p>If you're facing issues or want to request a new module, contact your TRE system administrator or support team <strong>(hgi@sanger.ac.uk)</strong>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "content.code.select", "content.code.annotate", "content.action.edit", "navigation.footer", "navigation.path", "navigation.expand", "navigation.instant", "navigation.tracking"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>

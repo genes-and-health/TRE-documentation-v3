@@ -1,0 +1,80 @@
+/* extra.css */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap');
+
+:root {
+  --md-text-font: "Mulish", sans-serif;
+  --md-code-font: "Fira Code", monospace; /* Optional: keeps code font nice */
+  --tw-text-opacity: 1;
+  --tw-bg-opacity: 1;
+  --gh-cobalt-blue: rgb(50 68 155 / var(--tw-bg-opacity, 1));
+  --gh-emerald-green: rgb(69 191 135/var(--tw-text-opacity,1)); 
+}
+
+.bg-blue {
+  background-color: var(--gh-cobalt-blue);
+}
+
+.text-green {
+  color: rgb(69 191 135/var(--tw-text-opacity,1));
+}
+
+/* Apply the custom background to the main content wrapper */
+/*.md-main {
+  background-color: rgb(50 68 155 / var(--tw-bg-opacity, 1));
+}*/
+
+
+.md-header {
+  background-color: --gh-cobalt-blue / var(--tw-bg-opacity, 1));
+}
+
+
+/* Apply shimmering animated background to MkDocs Material header */
+/*
+.md-header {
+  animation: shimmering-background 50s linear infinite;
+  animation-delay: 42s;
+  background: linear-gradient(
+    90deg,
+    var(--gh-cobalt-blue) 0%,
+    var(--gh-cobalt-blue) 50%,
+    var(--gh-emerald-green) 73%,
+    var(--gh-cobalt-blue) 94%
+  );
+  background-size: 200% 200%;
+}
+*/
+
+@keyframes shimmering-background {
+  /* Start shimmering */
+  0% {
+    background-position: 200% 0;
+  }
+  16% { /* 8s out of 50s = 16% */
+    background-position: -200% 0;
+  }
+
+  /* Hold still for the remaining 42s */
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+
+
+/* Example: Set all headings to G&H Cobalt Blue */
+.md-content h1,
+.md-content h2,
+.md-content h3,
+.md-content h4,
+.md-content h5,
+.md-content h6 {
+  font-weight:700;
+  color: var(--gh-cobalt-blue);
+}
+
+/* prevent GitHub stars etc. from showing in header */
+
+.md-header__source {
+  display:none;
+}
